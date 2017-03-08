@@ -45,24 +45,24 @@
 			<!-- Title -->
 			<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
 				<h2 class="w3-wide">RoboBibb #4941</h2>
-				<p class="w3-justify"> <center> Welcome to RoboBibb's website. We are a high school [<a href="http://www.firstinspires.org/robotics/frc" target="_blank">FRC</a>] robotics team located in Macon, Georgia. <center> </p>
+				<p class="w3-justify"> <center> Welcome to RoboBibb's website. We are a high school [<a href="http://www.firstinspires.org/robotics/frc" target="_blank">FRC</a>] robotics team located in Macon, Georgia. </center> </p>
 
 				<!-- Automatic Slideshow Images -->
 				<div class="w3-row w3-padding-32">
 					<div class="imgSlides w3-display-container w3-center">
-						<img src="./imgs/new_members.png" style="width:100%">
+						<img src="https://raw.githubusercontent.com/RoboBibb/robobibb.github.io/master/imgs/new_members.png" style="width:100%">
 						<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
 							<h3>2016-2017 Members</h3>
 						</div>
 					</div>
 					<div class="imgSlides w3-display-container w3-center">
-						<img src="./imgs/dest_einstein.jpg" style="width:100%">
+						<img src="https://raw.githubusercontent.com/RoboBibb/robobibb.github.io/master/imgs/dest_einstein.jpg" style="width:100%">
 						<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
 							<h3>Destination Einstein</h3>
 						</div>
 					</div>
 					<div class="imgSlides w3-display-container w3-center">
-						<img src="./imgs/bag_tag.jpg" style="width:100%">
+						<img src="https://raw.githubusercontent.com/RoboBibb/robobibb.github.io/master/imgs/bag_tag.jpg" style="width:100%">
 						<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
 							<h3>Bagged and Tagged</h3>
 						</div>
@@ -139,31 +139,30 @@
 		</footer>
 
 		<script>
-		// Automatic Slideshow - change image every 4 seconds
-		var imgIndex = 0;
-		(function carousel() {
-			var i;
-			var imgs = document.getElementsByClassName("imgSlides");
-			for (i = 0; i < x.length; i++) {
-				imgs[i].style.display = "none";
-			}
-			imgIndex++;
-			if (myIndex > x.length) 
-				{ myIndex = 1; }
-			imgs[imgIndex - 1].style.display = "block";
-			setTimeout(carousel, 4000);
-		})();
+			// Automatic Slideshow - change image every 4 seconds
+			var imgIndex = 0;
+			(function carousel() {
+				var i;
+				var imgs = document.getElementsByClassName("imgSlides");
+				for (i = 0; i < x.length; i++) {
+					imgs[i].style.display = "none";
+				}
+				imgIndex++;
+				if (myIndex > x.length) 
+					{ myIndex = 1; }
+				imgs[imgIndex - 1].style.display = "block";
+				setTimeout(carousel, 4000);
+			})();
 
-		// Used to toggle the menu on small screens when clicking on the menu button
-		function myFunction() {
-			var x = document.getElementById("navDemo");
-			if (x.className.indexOf("w3-show") == -1) {
-				x.className += " w3-show";
-			} else { 
-				x.className = x.className.replace(" w3-show", "");
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function myFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else { 
+					x.className = x.className.replace(" w3-show", "");
+				}
 			}
-		}
 		</script>
-
 	</body>
 </html>
