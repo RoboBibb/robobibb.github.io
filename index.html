@@ -14,14 +14,20 @@
 			.imgSlides {display: none}
 			div#pageBackground { background-image: url(imgs/tile.png); }
 			div#sheet { background-color: #fff; }
-			footer#dark-footer { background-color: #101111 !important; }
+			footer#dark-footer { 
+				background-color: #000 !important; 
+				color: #fff !important; 
+			}
 			.fa { color: #dedede; }
+
+			footer#dark-footer > ul { list-style-type: none; }
 		</style>
 
 	</head>
 	<body>
 
 		<!-- Navbar --> 
+		<!-- TODO: Finish or remake this -->
 		<div class="w3-top">
 			<div class="w3-bar w3-black w3-card-2">
 				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -55,19 +61,19 @@
 				<!-- Automatic Slideshow Images -->
 				<div class="w3-row w3-padding-32">
 					<div class="imgSlides w3-display-container w3-center">
-						<img src="https://raw.githubusercontent.com/RoboBibb/robobibb.github.io/master/imgs/new_members.png" style="width:100%">
+						<img src="imgs/new_members.png" style="width:100%">
 						<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
 							<h3>2016-2017 Members</h3>
 						</div>
 					</div>
 					<div class="imgSlides w3-display-container w3-center">
-						<img src="https://raw.githubusercontent.com/RoboBibb/robobibb.github.io/master/imgs/dest_einstein.jpg" style="width:100%">
+						<img src="imgs/dest_einstein.jpg" style="width:100%">
 						<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
 							<h3>Destination Einstein</h3>
 						</div>
 					</div>
 					<div class="imgSlides w3-display-container w3-center">
-						<img src="https://raw.githubusercontent.com/RoboBibb/robobibb.github.io/master/imgs/bag_tag.jpg" style="width:100%">
+						<img src="imgs/bag_tag.jpg" style="width:100%">
 						<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
 							<h3>Bagged and Tagged</h3>
 						</div>
@@ -104,7 +110,9 @@
 			<!-- "Learn More" and "Page" Links -->
 
 
-			<!-- The Contact Section -->
+			<!-- The Contact Section
+			<!-- Due to limitations these would have to exported to a separate server..
+					really not worth the time...
 			<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
 				<h2 class="w3-wide w3-center">CONTACT US</h2>
 				<div class="w3-row w3-padding-32">
@@ -129,18 +137,20 @@
 					</div>
 				</div>
 			</div>
+			--> 
 
 		<!-- End Page Content -->
 		</div>
 
 		<!-- Footer -->
 		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" id="dark-footer">
-			<a href="//fb.com/teamrobobibb/" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
-			<a href="https://github.com/RoboBibb/" target="_blank"><i class="fa fa-github w3-hover-text-red"></i></a>
-			<a href="https://plus.google.com/117965976071723693137" target="_blank"><i class="fa fa-google-plus w3-hover-text-red"></i></a>
-			<i class="fa fa-instagram w3-hover-text-purple"></i>
+			<a href="//fb.com/teamrobobibb/" title="we're @teamRoboBibb" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+			<a href="https://github.com/RoboBibb/" title="we have some pretty sick projects on GitHub" target="_blank"><i class="fa fa-github w3-hover-text-white"></i></a>
+			<a href="https://plus.google.com/117965976071723693137" title="programming team uses Google+" target="_blank"><i class="fa fa-google-plus-official w3-hover-text-red"></i></a>
+			<a href="https://twitter.com/FRC4941" title="140 characters or less" target="_blank"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
+			<a href="mailto:frcteam4941@gmail.com" title="send us an email"><i class="fa fa-envelope w3-hover-text-red"></i></a>
+			<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff" target="_blank"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
 			<i class="fa fa-snapchat w3-hover-text-yellow"></i>
-			<i class="fa fa-twitter w3-hover-text-light-blue"></i>
 		</footer>
 
 		<script>
