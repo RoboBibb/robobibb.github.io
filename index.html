@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -143,17 +144,17 @@
 			var imgIndex = 0;
 			(function carousel() {
 				var i;
-				var imgs = document.getElementsByClassName("imgSlides");
-				for (i = 0; i < x.length; i++) {
-					imgs[i].style.display = "none";
+				var slides = document.getElementsByClassName("imgSlides");
+				for (i = 0; i < slides.length; i++) {
+				   slides[i].style.display = "none";  
 				}
 				imgIndex++;
-				if (myIndex > x.length) 
-					{ myIndex = 1; }
-				imgs[imgIndex - 1].style.display = "block";
-				setTimeout(carousel, 4000);
+				if (imgIndex > slides.length) {
+					imgIndex = 1;
+				}    
+				slides[imgIndex-1].style.display = "block";  
+				setTimeout(carousel, 4000);    
 			})();
-
 			// Used to toggle the menu on small screens when clicking on the menu button
 			function myFunction() {
 				var x = document.getElementById("navDemo");
@@ -166,3 +167,4 @@
 		</script>
 	</body>
 </html>
+
