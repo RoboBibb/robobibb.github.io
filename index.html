@@ -12,6 +12,10 @@
 		<style>
 			body {font-family: "Lato", sans-serif}
 			.imgSlides {display: none}
+			div#pageBackground { background-image: url(imgs/tile.png); }
+			div#sheet { background-color: #fff; }
+			footer#dark-footer { background-color: #101111 !important; }
+			.fa { color: #dedede; }
 		</style>
 
 	</head>
@@ -41,10 +45,10 @@
 		</div>
 
 		<!-- Page content -->
-		<div class="w3-content" style="max-width:2000px">
+		<div class="w3-content" id="pageBackground" style="max-width:2000px">
 
 			<!-- Title -->
-			<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+			<div class="w3-container w3-content w3-center w3-padding-64" id="sheet" style="max-width:800px;border:1px solid grey" id="band">
 				<h2 class="w3-wide">RoboBibb #4941</h2>
 				<p class="w3-justify"> <center> Welcome to RoboBibb's website. We are a high school [<a href="http://www.firstinspires.org/robotics/frc" target="_blank">FRC</a>] robotics team located in Macon, Georgia. </center> </p>
 
@@ -130,7 +134,7 @@
 		</div>
 
 		<!-- Footer -->
-		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" id="dark-footer">
 			<a href="//fb.com/teamrobobibb/" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
 			<a href="https://github.com/RoboBibb/" target="_blank"><i class="fa fa-github w3-hover-text-red"></i></a>
 			<a href="https://plus.google.com/117965976071723693137" target="_blank"><i class="fa fa-google-plus w3-hover-text-red"></i></a>
@@ -167,4 +171,3 @@
 		</script>
 	</body>
 </html>
-
