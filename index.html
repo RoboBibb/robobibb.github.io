@@ -1,4 +1,4 @@
-
+		
 <!DOCTYPE html>
 <html>
 	<head>
@@ -32,13 +32,13 @@
 			<div class="w3-bar w3-black w3-card-2">
 				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 				<a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-		
-				<a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
-				<a href="#members" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
-				<a href="#sponsors" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
-				<a href="#outreach" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
-				<a href="#skillBuilding" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILL BUILDING</a>
-
+				<div id="menu">
+					<a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+					<a href="#members" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
+					<a href="#sponsors" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
+					<a href="#outreach" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+					<a href="#skillBuilding" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILL BUILDING</a>
+				</div>
 				<div class="w3-hide-small w3-dropdown-hover">
 					<a href="javascript:void(0)" class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></a>
 					<div class="w3-dropdown-content w3-white w3-card-4">
@@ -81,9 +81,9 @@
 				</div>
 
 				<!-- More links -->
-				<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+				<div class="w3-row-padding w3-padding-32" style="width:100%">
 					<div class="w3-third w3-margin-bottom">
-						<img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14963331_1319922191386428_6601832349416485814_n.jpg?oh=f852498909b5984bc35891f88e20b010&oe=5938F364" alt="Barnes and Noble's Maker Faire" style="width:100%" class="w3-hover-opacity">
+						<img src="imgs/maker_faire.jpg" alt="Barnes and Noble's Maker Faire" style="width:100%" class="w3-hover-opacity">
 						<div class="w3-container w3-white">
 							<p><b>COMMUNITY EVENTS<b></p>
 							<button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">PAGE</button>
@@ -97,7 +97,7 @@
 						</div>
 					</div>
 					<div class="w3-third w3-margin-bottom">
-						<img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14713753_1306025662776081_7116144981338151654_n.jpg?oh=ef537323ebb883ca12fa389659a35c99&oe=5934D73C" alt="2016 GRITS" style="width:50%;height:50%" class="w3-hover-opacity">
+						<img src="imgs/grits.jpg" alt="2016 GRITS" style="width:100%" class="w3-hover-opacity">
 						<div class="w3-container w3-white">
 							<p><b>COMPETITIONS</b></p>
 							<button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">PAGE</button>
@@ -150,7 +150,6 @@
 			<a href="https://twitter.com/FRC4941" title="140 characters or less" target="_blank"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
 			<a href="mailto:frcteam4941@gmail.com" title="send us an email"><i class="fa fa-envelope w3-hover-text-red"></i></a>
 			<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff" target="_blank"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
-			<i class="fa fa-snapchat w3-hover-text-yellow"></i>
 		</footer>
 
 		<script>
