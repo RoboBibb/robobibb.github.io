@@ -6,6 +6,8 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="description" content="FRC robotics team 4941, RoboBibb is a Macon-based student-run FRC robotics team"/>
+		<meta name="keywords" content="FRC robotics FIRST RoboBibb 4941 #4941 team howard high school bibb county macon robots"/>
+		<link rel="icon" type="image/jpg" href="imgs/roboman.jpg" />
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -15,12 +17,27 @@
 			div#pageBackground { background-image: url(imgs/tile.png); }
 			div#sheet { background-color: #fff; }
 			footer#dark-footer { 
-				background-color: #000 !important; 
-				color: #fff !important; 
+				background-color: #202121 !important; 
+				color: #fff !important;
+				box-shadow: inset 0px 9px 9px -6px #000;
+				padding-top: 10px;
+				padding-bottom: 5px;
 			}
-			.fa { color: #dedede; }
+			.fa { color: grey; }
+			.social-icon { padding: 10px; 
+				-webkit-transition:text-shadow 0.5s;
+				/* For Safari 3.1 to 6.0 */ 
+				transition: text-shadow 0.5s;
+			}
+			.social-icon:hover {text-shadow:0px 0px 10px #fff;}
 
-			footer#dark-footer > ul { list-style-type: none; }
+			footer#dark-footer > div#socialLinks { 
+				border: 1px solid grey;
+				padding:2px;margin:3px; 
+				border-radius: 5px;
+			}
+			div > hr{padding:0; margin: 0;}
+			
 		</style>
 
 	</head>
@@ -143,13 +160,20 @@
 		</div>
 
 		<!-- Footer -->
-		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" id="dark-footer">
-			<a href="//fb.com/teamrobobibb/" title="we're @teamRoboBibb" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
-			<a href="https://github.com/RoboBibb/" title="we have some pretty sick projects on GitHub" target="_blank"><i class="fa fa-github w3-hover-text-white"></i></a>
-			<a href="https://plus.google.com/117965976071723693137" title="programming team uses Google+" target="_blank"><i class="fa fa-google-plus-official w3-hover-text-red"></i></a>
-			<a href="https://twitter.com/FRC4941" title="140 characters or less" target="_blank"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
-			<a href="mailto:frcteam4941@gmail.com" title="send us an email"><i class="fa fa-envelope w3-hover-text-red"></i></a>
-			<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff" target="_blank"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+		<footer class="w3-container w3-xlarge" id="dark-footer">
+			<div class="w3-left" id="socialLinks">
+				<center><h6>Social</h6></center><hr/>
+				<div>
+					<a href="//fb.com/teamrobobibb/" title="we're @teamRoboBibb" target="_blank"><i class="fa social-icon fa-facebook-official w3-hover-text-indigo"></i></a>
+					<a href="https://twitter.com/FRC4941" title="140 characters or less" target="_blank"><i class="fa social-icon fa-twitter w3-hover-text-light-blue"></i></a>
+					<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff" target="_blank"><i class="fa social-icon fa-instagram w3-hover-text-purple"></i></a>
+					<br/>
+					<a href="https://plus.google.com/117965976071723693137" title="programming team uses Google+" target="_blank"><i class="fa social-icon fa-google-plus-official w3-hover-text-red"></i></a>
+					<a href="//github.com/RoboBibb/" title="we have some pretty sick projects on GitHub" target="_blank"><i class="fa social-icon fa-github w3-hover-text-white"></i></a>
+					<a href="mailto:frcteam4941@gmail.com" title="send us an email"><i class="fa social-icon fa-envelope w3-hover-text-red"></i></a>
+				</div>
+			</div>
+			<hr/><hr/><hr/><hr/><hr/><hr/>
 		</footer>
 
 		<script>
