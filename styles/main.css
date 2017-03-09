@@ -1,0 +1,42 @@
+/*
+* 		~~Main Style-Sheet for RoboBibb.github.io~~
+* before making changes be sure to verify that they don't affect *any* of the pages
+* negatively.
+*/
+body {font-family: "Lato", sans-serif;}
+
+/*navbar*/
+div#navMenu > .navBtn{
+	-webkit-transition:color 0.5s;
+	-webkit-transition:background-color 0.5s;
+	/* For Safari 3.1 to 6.0 */ 
+	transition:color 0.5s;
+	transition:background-color 0.5s;
+}
+
+/*defined pages vs background*/
+div#pageBackground { background-image: url(imgs/tile.png); }
+div#sheet { background-color: #fff; }
+
+/*footer*/
+footer#dark-footer { 
+	background-color: #202121 !important; 
+	color: #fff !important;
+	box-shadow: inset 0px 9px 9px -6px #000;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+footer#dark-footer > div#socialLinks { 
+	border: 1px solid grey;
+	padding:2px;margin:3px; 
+	border-radius: 5px;
+}
+.social-icon { padding: 10px;
+	color:grey;
+	-webkit-transition:text-shadow 0.5s;
+	/* For Safari 3.1 to 6.0 */ 
+	transition: text-shadow 0.5s;
+}
+.social-icon:hover {text-shadow:0px 0px 10px #fff;}
+
+div > hr{padding:0;margin:0;}
