@@ -1,4 +1,3 @@
-		
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,9 +10,18 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
 		<style>
 			body {font-family: "Lato", sans-serif}
 			.imgSlides {display: none}
+
+			/* template ss*/
+			.w3-top {
+				-webkit-transition:height 0.5s;
+				/* For Safari 3.1 to 6.0 */ 
+				transition:height 0.5s;
+			}
+
 			div#pageBackground { background-image: url(imgs/tile.png); }
 			div#sheet { background-color: #fff; }
 			footer#dark-footer { 
@@ -37,9 +45,34 @@
 				border-radius: 5px;
 			}
 			div > hr{padding:0; margin: 0;}
-			
-		</style>
 
+			div#navMenu > .navBtn {
+				-webkit-transition:color 0.5s;
+				/* For Safari 3.1 to 6.0 */ 
+				transition:color 0.5s;
+
+
+				-webkit-transition:background-color 0.5s;
+				/* For Safari 3.1 to 6.0 */ 
+				transition:background-color 0.5s;
+			}
+
+		</style>
+		<script>
+
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleMenu(){
+				var menu = document.getElementsByClassName("navBtn");
+				for (var i = 0; i < menu.length; i++) { 
+					if (menu[i].className.indexOf("w3-hide-small") == -1) {
+						menu[i].className += " w3-hide-small";
+					} else { 
+						menu[i].className = menu[i].className.replace(" w3-hide-small", "");
+					}
+				}
+			}
+			
+		</script>
 	</head>
 	<body>
 
@@ -47,22 +80,16 @@
 		<!-- TODO: Finish or remake this -->
 		<div class="w3-top">
 			<div class="w3-bar w3-black w3-card-2">
-				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 				<a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-				<div id="menu">
-					<a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
-					<a href="#members" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
-					<a href="#sponsors" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
-					<a href="#outreach" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
-					<a href="#skillBuilding" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILL BUILDING</a>
-				</div>
-				<div class="w3-hide-small w3-dropdown-hover">
-					<a href="javascript:void(0)" class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></a>
-					<div class="w3-dropdown-content w3-white w3-card-4">
-						<a href="#">Team 4941</a>
-						<a href="#">Accomplishments</a>
-						<a href="#">Contact Us</a>
-					</div>
+				<div id="navMenu">
+					<a href="#about" class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>	
+					<a href="#gallery" class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+					<a href="#members" class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
+					<a href="#sponsors" class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
+					<a href="#outreach" class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+					<a href="#skillBuilding" class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">SKILL BUILDING</a>
+					<a href="#contact" class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
 				</div>
 			</div>	
 		</div>
@@ -122,39 +149,41 @@
 					</div>
 				</div>
 			</div>
-			</div>
-
-			<!-- "Learn More" and "Page" Links -->
 
 
-			<!-- The Contact Section
-			<!-- Due to limitations these would have to exported to a separate server..
-					really not worth the time...
-			<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-				<h2 class="w3-wide w3-center">CONTACT US</h2>
-				<div class="w3-row w3-padding-32">
-					<div class="w3-col m6 w3-large w3-margin-bottom">
-						<i class="fa fa-map-marker" style="width:30px"></i> Macon GA<br>
-						<i class="fa fa-phone" style="width:30px"></i> Phone:00000000<br>
-						<i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-					</div>
-					<div class="w3-col m6">
-						<form action="/action_page.php" target="_blank">
-							<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-								<div class="w3-half">
-									<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-								</div>
-								<div class="w3-half">
-									<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-								</div>
+		</div>
+
+		<!-- "Learn More" and "Page" Links -->
+
+
+		<!-- The Contact Section
+		<!-- Due to limitations these would have to exported to a separate server..
+				really not worth the time...
+		<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+			<h2 class="w3-wide w3-center">CONTACT US</h2>
+			<div class="w3-row w3-padding-32">
+				<div class="w3-col m6 w3-large w3-margin-bottom">
+					<i class="fa fa-map-marker" style="width:30px"></i> Macon GA<br>
+					<i class="fa fa-phone" style="width:30px"></i> Phone:00000000<br>
+					<i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+				</div>
+				<div class="w3-col m6">
+					<form action="/action_page.php" target="_blank">
+						<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+							<div class="w3-half">
+								<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
 							</div>
-							<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" />
-							<button class="w3-btn w3-section w3-right" type="submit">SEND</button>
-						</form>
-					</div>
+							<div class="w3-half">
+								<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+							</div>
+						</div>
+						<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" />
+						<button class="w3-btn w3-section w3-right" type="submit">SEND</button>
+					</form>
 				</div>
 			</div>
-			--> 
+		</div>
+		--> 
 
 		<!-- End Page Content -->
 		</div>
@@ -177,7 +206,7 @@
 		</footer>
 
 		<script>
-			// Automatic Slideshow - change image every 4 seconds
+			// Slideshow - change image every 4 seconds
 			var imgIndex = 0;
 			(function carousel() {
 				var i;
@@ -188,19 +217,10 @@
 				imgIndex++;
 				if (imgIndex > slides.length) {
 					imgIndex = 1;
-				}    
-				slides[imgIndex-1].style.display = "block";  
+				}
+				slides[imgIndex - 1].style.display = "block";  
 				setTimeout(carousel, 4000);    
 			})();
-			// Used to toggle the menu on small screens when clicking on the menu button
-			function myFunction() {
-				var x = document.getElementById("navDemo");
-				if (x.className.indexOf("w3-show") == -1) {
-					x.className += " w3-show";
-				} else { 
-					x.className = x.className.replace(" w3-show", "");
-				}
-			}
 		</script>
 	</body>
 </html>
