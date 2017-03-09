@@ -15,7 +15,7 @@ div#navMenu > .navBtn{
 }
 
 /*defined pages vs background*/
-div#pageBackground { background-image: url(imgs/tile.png); }
+div#pageBackground { background-image: url(https://robobibb.github.io/imgs/tile.png); }
 div#sheet { background-color: #fff; }
 
 /*footer*/
