@@ -10,50 +10,11 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
+		<link rel="stylesheet" href="https://robobibb.github.io/styles/main.css" />
 		<style>
-			body {font-family: "Lato", sans-serif;}
 			.imgSlides {display: none;}
-
-			/* template ss*/
-			div#pageBackground { background-image: url(imgs/tile.png); }
-			div#sheet { background-color: #fff; }
-			footer#dark-footer { 
-				background-color: #202121 !important; 
-				color: #fff !important;
-				box-shadow: inset 0px 9px 9px -6px #000;
-				padding-top: 10px;
-				padding-bottom: 5px;
-			}
-			.fa { color: grey; }
-			.social-icon { padding: 10px; 
-				-webkit-transition:text-shadow 0.5s;
-				/* For Safari 3.1 to 6.0 */ 
-				transition: text-shadow 0.5s;
-			}
-			.social-icon:hover {text-shadow:0px 0px 10px #fff;}
-
-			footer#dark-footer > div#socialLinks { 
-				border: 1px solid grey;
-				padding:2px;margin:3px; 
-				border-radius: 5px;
-			}
-			div > hr{padding:0; margin: 0;}
-
-			div#navMenu > .navBtn {
-				-webkit-transition:color 0.5s;
-				/* For Safari 3.1 to 6.0 */ 
-				transition:color 0.5s;
-
-
-				-webkit-transition:background-color 0.5s;
-				/* For Safari 3.1 to 6.0 */ 
-				transition:background-color 0.5s;
-			}
-
 		</style>
 		<script>
-
 			// Used to toggle the menu on small screens when clicking on the menu button
 			function toggleMenu(){
 				var menu = document.getElementsByClassName("navBtn");
@@ -174,9 +135,8 @@
 			// Slideshow - change image every 4 seconds
 			var imgIndex = 0;
 			(function carousel() {
-				var i;
 				var slides = document.getElementsByClassName("imgSlides");
-				for (i = 0; i < slides.length; i++) {
+				for (var i = 0; i < slides.length; i++) {
 				   slides[i].style.display = "none";  
 				}
 				imgIndex++;
