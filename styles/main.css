@@ -3,7 +3,7 @@
 * before making changes be sure to verify that they don't affect *any* of the pages
 * negatively.
 */
-body {font-family: "Lato", sans-serif;}
+body {font-family: "Lato", sans-serif; background-color: #202121;}
 
 /*navbar*/
 div#navMenu > .navBtn{
