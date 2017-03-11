@@ -3,6 +3,7 @@
 * before making changes be sure to verify that they don't affect *any* of the pages
 * negatively.
 */
+
 body {font-family: "Lato", sans-serif; background-color: #202121;}
 
 /*navbar*/
@@ -13,10 +14,11 @@ div#navMenu > .navBtn{
 	transition:color 0.5s;
 	transition:background-color 0.5s;
 }
+div.navBtn { padding: 10px }
 
 /*defined pages vs background*/
 div#pageBackground { background-image: url(https://robobibb.github.io/imgs/tile.png); }
-div#sheet { background-color: #fff; }
+div#sheet {  padding-top: 88px !important; background-color: #fff; }
 
 /*footer*/
 footer#dark-footer { 
