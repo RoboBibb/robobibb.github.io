@@ -15,10 +15,10 @@ div#navMenu > .navBtn{
 	transition:background-color 0.5s;
 }
 div.navBtn {padding:10px;}
-div.dd-navBtn {padding:0 !important;}
+div.dd-navBtn, div#navMenu div.navBtn {padding:0 !important;}
 a.hamburger {color:#000;transition:color 0.5s;}
-div.w3-dropdown-content a { border-left: 2px solid #202121; }
-div.w3-dropdown-content a:hover { border-left: 4px solid #202121; }
+div.w3-dropdown-content a { border-left: 2px solid #202121 !important; }
+div.w3-dropdown-content a:hover { border-left: 4px solid #202121 !important; }
 
 /*defined pages vs background*/
 div#pageBackground { background-image: url(https://robobibb.github.io/imgs/tile.png); }
