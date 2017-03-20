@@ -14,14 +14,16 @@ div#navMenu > .navBtn{
 	transition:color 0.5s;
 	transition:background-color 0.5s;
 }
-div.navBtn { padding: 10px }
+div.navBtn {padding:10px;}
+div.navMenu>div.navBtn {padding:0 !important;}
+a.hamburger {color:#000;transition:color 0.5s;}
 
 /*defined pages vs background*/
 div#pageBackground { background-image: url(https://robobibb.github.io/imgs/tile.png); }
-div#sheet {  padding-top: 88px !important; background-color: #fff; }
+div#sheet { padding-top: 88px !important; background-color: #fff; }
 
 /*footer*/
-footer#dark-footer { 
+footer#dark-footer {
 	background-color: #202121 !important; 
 	color: #fff !important;
 	box-shadow: inset 0px 9px 9px -6px #000;
@@ -42,3 +44,4 @@ footer#dark-footer > div#socialLinks {
 .social-icon:hover {text-shadow:0px 0px 10px #fff;}
 
 div > hr{padding:0;margin:0;}
+
