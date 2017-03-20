@@ -18,43 +18,60 @@
 			// Used to toggle the menu on small screens when clicking on the menu button
 			function toggleMenu(){
 				var menu = document.getElementsByClassName("navBtn");
-				for (var i = 0; i < menu.length; i++) { 
+				for (var i = 0; i < menu.length; i++) {
 					if (menu[i].className.indexOf("w3-hide-small") == -1) {
 						menu[i].className += " w3-hide-small";
-					} else { 
+						document.getElementById("hamburger-menu").style.backgroundColor = "#000";
+  					} else {
 						menu[i].className = menu[i].className.replace(" w3-hide-small", "");
+						document.getElementById("hamburger-menu").style.backgroundColor = "red";
 					}
 				}
 			}
-			
 		</script>
 	</head>
 	<body>
 
-		<!-- Navbar --> 
+		<!-- Navbar -->
 		<div class="w3-top">
 			<div class="w3-bar w3-black w3-card-2">
-				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right"
+				   onclick="toggleMenu()" id="hamburger-menu"><i class="fa fa-bars"></i></a>
 				<a href="https://robobibb.github.io/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
 				<div id="navMenu">
 					<a href="https://robobibb.github.io/about/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>	
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+					<!-- dropdown menu for subteams-->
+					<div class="navBtn dd-navBtn w3-hide-small w3-dropdown-hover">
+						<a href="javascript:void(0)" onclick="" class="w3-padding-large w3-button"
+						   title="More">SUB-TEAMS <i class="fa fa-caret-down"></i></a>
+						<div class="w3-dropdown-content w3-whgrey3-card-4">
+							<a href="https://robobibb.github.com/teams/mechanical/">Mechanical</a>
+							<a href="https://robobibb.github.com/teams/electrical/">Electrical</a>
+							<a href="https://robobibb.github.com/teams/programming/">Programming</a>
+							<a href="https://robobibb.github.com/teams/marketing/">Marketing</a>
+							<!--<a href="#">Scouting</a>
+							<a href="#">Safety</a>-->
+						</div>
+					</div>
+
 					<a href="https://robobibb.github.io/gallery/"
 					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
-					<a href="https://robobibb.github.io/members/" 
+					<a href="https://robobibb.github.io/members/"
 					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
-					<a href="https://robobibb.github.io/sponsors/" 
+					<a href="https://robobibb.github.io/sponsors/"
 					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
-					<a href="https://robobibb.github.io/outreach/" 
+					<a href="https://robobibb.github.io/outreach/"
 					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
-					<a href="https://robobibb.github.io/skills/" 
+					<a href="https://robobibb.github.io/skills/"
 					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small" 
 					   title="we are more than robots!">SKILL BUILDING</a>
-					<a href="https://robobibb.github.io/contact/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+					<a href="https://robobibb.github.io/robots/"
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ROBOTS</a>
 				</div>
 			</div>	
 		</div>
+
 
 		<!-- Page content -->
 		<div class="w3-content" id="pageBackground" style="max-width:2000px">
