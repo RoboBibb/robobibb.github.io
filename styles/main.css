@@ -15,7 +15,7 @@ div#navMenu > .navBtn{
 	transition:background-color 0.5s;
 }
 div.navBtn {padding:10px;}
-div.navMenu>div.navBtn {padding:0 !important;}
+div#navMenu>div.navBtn {padding:0 !important;}
 a.hamburger {color:#000;transition:color 0.5s;}
 
 /*defined pages vs background*/
