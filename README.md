@@ -12,5 +12,5 @@ Although anyone on programming can probably fix most problems, these are the peo
 - outreach -> Tate
 - skills building -> Tate
 - styles/main.css -> everyone, but blame Tate
-- Gallery -> ? (not asigned)
-- Contact -> ? (not asigned)
+- Robots -> Tate
+- Sub-team sections -> ?
