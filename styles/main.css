@@ -21,8 +21,12 @@ div.w3-dropdown-content a { border-left: 2px solid #202121 !important; }
 div.w3-dropdown-content a:hover { border-left: 4px solid #202121 !important; }
 
 /*defined pages vs background*/
-div#pageBackground { background-image: url(https://robobibb.github.io/imgs/tile.png); }
 div#sheet { padding-top: 88px !important; background-color: #fff; }
+div#pageBackground {
+	background-image: url(https://robobibb.github.io/imgs/tile.png);
+	background-attachment: fixed;
+}
+
 
 /*footer*/
 footer#dark-footer {
