@@ -1,25 +1,102 @@
 <!DOCTYPE html>
-<html> 
-  <head>
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+<html>
+	<head>
+		<title>About us</title>
+		<meta name="description" content="Learn more about RoboBibb. We have an insteresting team with a great backstory and an even brighter future. Hopefully we can give you an idea on what it's actually like to be a member."/>
+		<meta name="keywords" content="FRC about robotics FIRST RoboBibb 4941 #4941 team howard high school bibb county robots macon"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="icon" type="image/jpg" href="https://robobibb.github.io/imgs/roboman.jpg" />
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <!-- Page content -->
-		<div class="w3-content" id="pageBackground" style="max-width:2000px">
-			<div class="w3-container w3-content w3-center w3-padding-64" id="sheet" style="max-width:800px;border:1px solid grey" id="band">	
-        <title>About Us</title>
-  <body>
-	<h1><b>About Us</b></h1>
+		<link rel="stylesheet" href="https://robobibb.github.io/styles/main.css" />
+		<script>
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleMenu(){
+				var menu = document.getElementsByClassName("navBtn");
+				for (var i = 0; i < menu.length; i++) {
+					if (menu[i].className.indexOf("w3-hide-small") == -1) {
+						menu[i].className += " w3-hide-small";
+						document.getElementById("hamburger-menu").style.backgroundColor = "#000";
+  					} else {
+						menu[i].className = menu[i].className.replace(" w3-hide-small", "");
+						document.getElementById("hamburger-menu").style.backgroundColor = "red";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
 
-	<h2>Mission</h2>
-  <p>Our mission as Macon-Bibb county's only FIRST Robotics Team is to give high shool students from all
-     backgrounds a chance to learn essential skills needed to succeed in STEM careers. As a team, we build
-     robots thorugh the application of the engineering-design process to compete in the FIRST Robotics 
-     competition each year.</p>
-     
-	<h3>Goals</h3>
-  <p>Our goal is to inspire an appreciation in mathematics and science technologies in mentors and students 
-     alike. We also strive to instill a sense of teamwork and professionalism as well as help students develop
-     important skills.</p>
-		 	</body>
-	
+		<!-- Navbar -->
+		<div class="w3-top">
+			<div class="w3-bar w3-black w3-card-2">
+				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right"
+				   onclick="toggleMenu()" id="hamburger-menu"><i class="fa fa-bars"></i></a>
+				<a href="https://robobibb.github.io/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+				<div id="navMenu">
+					<a href="https://robobibb.github.io/about/"
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+					<!-- dropdown menu for subteams-->
+					<div class="navBtn dd-navBtn w3-hide-small w3-dropdown-hover">
+						<a href="javascript:void(0)" onclick="" class="w3-padding-large w3-button"
+						   title="More">SUB-TEAMS <i class="fa fa-caret-down"></i></a>
+						<div class="w3-dropdown-content w3-whgrey3-card-4">
+							<a href="https://robobibb.github.com/teams/mechanical/">Mechanical</a>
+							<a href="https://robobibb.github.com/teams/electrical/">Electrical</a>
+							<a href="https://robobibb.github.com/teams/programming/">Programming</a>
+							<a href="https://robobibb.github.com/teams/marketing/">Marketing</a>
+							<!--<a href="#">Scouting</a>
+							<a href="#">Safety</a>-->
+						</div>
+					</div>
+					<a href="https://robobibb.github.io/members/"
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
+					<a href="https://robobibb.github.io/sponsors/"
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
+					<a href="https://robobibb.github.io/outreach/"
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+					<a href="https://robobibb.github.io/skills/"
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small"
+					   title="we are more than robots!">SKILL BUILDING</a>
+					<a href="https://robobibb.github.io/robots/"
+					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ROBOTS</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Page content -->
+		<div class="w3-content" id="pageBackground" style="max-width:2000px">
+			<div class="w3-container w3-content w3-center w3-padding-64" id="sheet" style="max-width:800px;border:1px solid grey" id="band">
+				<!-- Title -->
+				<h2 class="w3-wide">About Us</h2>
+				<h4>Mission:</h4>
+				<p>Our mission as Macon-Bibb county's only FIRST Robotics Team is to give high shool students from all backgrounds a chance to learn essential skills needed to succeed in STEM careers. As a team, we build robots thorugh the application of the engineering-design process to compete in the FIRST Robotics competition each year.</p>
+
+				<h4>Goals:</h4>
+				<p>Our primary goal is to inspire an appreciation in mathematics and science technologies in mentors and students alike. We also strive to instill a sense of teamwork and professionalism as well as help students develop important skills.</p>
+
+
+		<!-- End Page Content -->
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="w3-container w3-xlarge" id="dark-footer">
+			<div class="w3-left" id="socialLinks">
+				<center><h6>Social</h6></center><hr/>
+				<a href="//fb.com/teamrobobibb/" title="we're @teamRoboBibb" target="_blank"><i class="fa social-icon fa-facebook-official w3-hover-text-indigo"></i></a>
+				<a href="https://twitter.com/FRC4941" title="140 characters or less" target="_blank"><i class="fa social-icon fa-twitter w3-hover-text-light-blue"></i></a>
+				<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff" target="_blank"><i class="fa social-icon fa-instagram w3-hover-text-purple"></i></a>
+				<br/>
+				<a href="https://plus.google.com/117965976071723693137" title="programming team uses Google+" target="_blank"><i class="fa social-icon fa-google-plus-official w3-hover-text-red"></i></a>
+				<a href="//github.com/RoboBibb/" title="we have some pretty sick projects on GitHub" target="_blank"><i class="fa social-icon fa-github w3-hover-text-white"></i></a>
+				<a href="mailto:frcteam4941@gmail.com" title="send us an email"><i class="fa social-icon fa-envelope w3-hover-text-red"></i></a>
+			</div>
+			<hr/><hr/><hr/><hr/><hr/><hr/>
+		</footer>
+
+	</body>
+</html>
