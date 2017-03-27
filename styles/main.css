@@ -49,5 +49,4 @@ footer#dark-footer > div#socialLinks {
 }
 .social-icon:hover {text-shadow:0px 0px 10px #fff;}
 
-/*div > hr{padding:0;margin:0;}*/
-
+div#socialLinks > hr{padding:0;margin:0;}
