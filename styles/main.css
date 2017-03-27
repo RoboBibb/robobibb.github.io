@@ -27,6 +27,18 @@ div#pageBackground {
 	background-attachment: fixed;
 }
 
+/*page cards*/
+div.page-card {
+	border: 1px solid grey;
+	transition: border-color 0.5s;
+	overflow: hidden;
+	border-radius: 5px;
+	border-left-width: 4px;
+}
+div.page-card:hover {
+	border-color: red;
+}
+
 
 /*footer*/
 footer#dark-footer {
@@ -40,6 +52,8 @@ footer#dark-footer > div#socialLinks {
 	border: 1px solid grey;
 	padding:2px;margin:3px; 
 	border-radius: 5px;
+	transition: border-color 0.5s;
+	border-left-width: 4px;
 }
 .social-icon { padding: 10px;
 	color:grey;
@@ -50,3 +64,18 @@ footer#dark-footer > div#socialLinks {
 .social-icon:hover {text-shadow:0px 0px 10px #fff;}
 
 div#socialLinks > hr{padding:0;margin:0;}
+
+footer#dark-footer div > hr {
+	padding: 0;
+	margin: 0;
+	transition: border-color 0.4s;
+}
+footer#dark-footer > div:hover > hr {
+	border-color: red !important;
+}
+footer#dark-footer > div#socialLinks:hover > hr {
+	border-color: white !important;
+}
+footer#dark-footer > div {
+	padding: 11.5px;
+}
