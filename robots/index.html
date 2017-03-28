@@ -11,21 +11,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 		<link rel="stylesheet" href="https://robobibb.github.io/styles/main.css" />
-		<script>
-			// Used to toggle the menu on small screens when clicking on the menu button
-			function toggleMenu(){
-				var menu = document.getElementsByClassName("navBtn");
-				for (var i = 0; i < menu.length; i++) {
-					if (menu[i].className.indexOf("w3-hide-small") == -1) {
-						menu[i].className += " w3-hide-small";
-						document.getElementById("hamburger-menu").style.backgroundColor = "#000";
-  					} else {
-						menu[i].className = menu[i].className.replace(" w3-hide-small", "");
-						document.getElementById("hamburger-menu").style.backgroundColor = "red";
-					}
-				}
-			}
-		</script>
+		<script src="https://robobibb.github.io/scripts/main.js"></script>
 		<style>
 			div.member-group {
 				border: 1px solid grey;
@@ -43,50 +29,16 @@
 	<body>
 
 		<!-- Navbar -->
-		<div class="w3-top">
-			<div class="w3-bar w3-black w3-card-2">
-				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right"
-				   onclick="toggleMenu()" id="hamburger-menu"><i class="fa fa-bars"></i></a>
-				<a href="https://robobibb.github.io/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-				<div id="navMenu">
-					<a href="https://robobibb.github.io/about/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-					<!-- dropdown menu for subteams-->
-					<div class="navBtn dd-navBtn w3-hide-small w3-dropdown-hover">
-						<a href="javascript:void(0)" onclick="" class="w3-padding-large w3-button"
-						   title="More">SUB-TEAMS <i class="fa fa-caret-down"></i></a>
-						<div class="w3-dropdown-content w3-whgrey3-card-4">
-							<a href="https://robobibb.github.com/teams/mechanical/">Mechanical</a>
-							<a href="https://robobibb.github.com/teams/electrical/">Electrical</a>
-							<a href="https://robobibb.github.com/teams/programming/">Programming</a>
-							<a href="https://robobibb.github.com/teams/marketing/">Marketing</a>
-							<!--<a href="#">Scouting</a>
-							<a href="#">Safety</a>-->
-						</div>
-					</div>
-					<a href="https://robobibb.github.io/members/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
-					<a href="https://robobibb.github.io/sponsors/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
-					<a href="https://robobibb.github.io/outreach/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
-					<a href="https://robobibb.github.io/skills/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small"
-					   title="we are more than robots!">SKILL BUILDING</a>
-					<a href="https://robobibb.github.io/robots/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ROBOTS</a>
-				</div>
-			</div>
-		</div>
-
+		<div class="w3-top" id="navbarhere"></div>
+		<script>genNavBar("navbarhere");</script>
 
 		<!-- Page content -->
 		<div class="w3-content" id="pageBackground" style="max-width:2000px">
 			<div class="w3-container w3-content w3-center w3-padding-64" id="sheet" style="max-width:800px;border:1px solid grey" id="band">
 				<!-- Title -->
-
 				<h2 class="w3-wide" style="display:inline-block">Our Robots</h2>
 				<h3 style="display:inline-block"><i>The RoboBibb Chronicles</i></h3><hr/>
+
 				<p>Here we provide an honest breakdown of our robots. For us, everything is a learning experience, so we discuss the highs and lows as without them it's just bragging.</p>
 				<h5>Images coming soon, for now enjoy the text :)</h5>
 				<div class="member-group w3-container w3-center w3-content">
@@ -98,15 +50,14 @@
 					<p>The sponsors panel doubles as a way for us to guard our electronics from gears and fuel which could be flying around. In addition, if a gear were caught on us we wouldn't be able to get more due to the rules. Our winch is strong, quick, and consistent. We also have a camera to help us get the winch aligned. By focusing our time and resources, we have created something we are truely satisfied with, but of course will continue to improve.</p>
 
 					<h4>Why it's so Successful</h4>
-					<p>This year's robot is practically built for our primary driver Thomas. They're both speed demons, and we've optimized our robot in several ways to accomodate this <!--insert link to github-link-->. Thomas is an agressive driver and the robot is tough as nails. It's a perfect match.</p>
-					<p>Something that Weijie, one of our scouting team members noticed was that many teams were trying to do too much, and the things the built to function independently don't seem to function as a whole. Different parts of the robot seem to get in the way of eachother, and there's too much for the driver to keep track of and control. By keeping our design simple, but optimized, we are able to succeed without being a swiss-army knife sort of robot.</p>
+					<p>This year's robot is practically built for our drive team. They're both speed demons, and we've optimized our robot in several ways to accomodate this <!--insert link to github-link-->. Because of our agressive drivers, the robot is tough as nails. It's a perfect match.</p>
+					<p>Something that Weijie (scouting team) noticed was that many teams were trying to do too much, and the things the built to function independently don't seem to function as a whole. Different parts of the robot seem to get in the way of eachother, and there's too much for the driver to keep track of and control. By keeping our design simple, but optimized, we are able to succeed without being a swiss-army knife sort of robot.</p>
 
 					<h4>Strengths</h4><ul>
 						<li>6 CIM drive train, very powerful, very fast</li>
 						<li>Grippy, Quick, and Consistent Climber</li>
 						<li>Sturdy build with protected electrical board</li>
-						<li>Passive gear intake mechanism</li>
-						<ul>
+						<li>Passive gear intake mechanism</li><ul>
 							<li>Guides gear into position</li>
 							<li>lets us quickly discard a bad gear</li>
 						</ul>
@@ -118,6 +69,9 @@
 						<li>We don't have encoders</li>
 						<li>gear intake requires some allignment</li>
 					</ul>
+
+					<img src="sm-dark.jpg" width="100%" />
+					<img src="sm.jpg" width="100%" />
 				</div><div class="member-group w3-container w3-center w3-content">
 					<h3>Sir Sophagus - StrongHold (2016)</h3><hr/>
 					<p>Although our final product strayed massively from our planned design, in the end we had an effective bot which got us picked at the state level. We had a tough robot which was very functional and did it's set of tasks well. We focused on low-goal and the defenses.</p>
@@ -126,65 +80,65 @@
 						<li>dual-shifting gearbox</li>
 						<li>big wheels (speed and versatility)</li>
 						<li>good camera placement</li>
+						<li>fairly stirdy</li>
+						<li>Switching from LabVIEW to C++ opens doors</li>
 					</ul>
 
 					<h4>Weaknesses</h4><ul>
 						<li>ball sometimes gets jammed in shooter</li>
 						<li>Appearance</li>
 						<li>Electrical and pneumatics unprotected and unorganized</li>
+						<li>Not appealing to the eye</li>
 					</ul>
+					<img src="ss3.jpg" width="100%" />
+					<img src="ss1.jpg" width="50%"
+					/><img src="ss2.jpg" width="50%" />
 				</div><div class="member-group w3-container w3-center w3-content">
 					<h3>2-Chainz - Recycle Rush (2015)</h3><hr/>
 					<p>Although this most definitely wasn't our favorite game, along with a few minor challenges, we put in our best effort to our robot, and most importantly had fun.</p>
-					<h4>Strengths</h4>
-					<ul>
+					<h4>Strengths</h4><ul>
 						<li>Using a counter-balance, we were able to make the 6 foot (2 meter) tall robot quite stable</li>
 						<li>Paint made parts look attractive at first competition</li>
 						<li>arms survived competition</li>
 					</ul>
-					<h4>Weaknesses</h4>
-					<ul>
+					<h4>Weaknesses</h4><ul>
 						<li>paint peeled and caused problems</li>
 						<li>arms didn't grip bins as planned</li>
+						<li>arms bend under weight allowing bins to slide off</li>
 						<li>varius parts began to bend under stress</li>
 					</ul>
+					<img src="2c2.jpg" width="100%" />
+					<img src="2c1.jpg" width="50%"
+					/><img src="2c3.jpg" width="50%" />
 				</div><div class="member-group w3-container w3-center w3-content">
 					<h3>Ash Catch'em - Airial Assist (2014)</h3><hr/>
 					<p>This is our team's first ever robot. It's quite an achievement considering it was our team's first year. We had some portions of the robot which rival what we make today.</p>
 
 					<h4>Strengths</h4><ul>
 						<li>Catching mechanism functioned perfectly</li>
-						<li>High-shooter effective</li>
-						<li>can hit low-goal if needed</li>
+						<li>High-shooter effective after modifications</li>
+						<li>consistent low-goal-shooter</li>
 					</ul>
 
 					<h4>Weaknesses</h4><ul>
 						<li>Topheavy</li>
-						<li>picking up ball from floor</li>
-						<ul>
+						<li>picking up ball from floor</li><ul>
 							<li>arms needed to befixed after almost every match</li>
 							<li>vacuum ball-grabbing mechanism non-functional</li>
 						</ul>
 					</ul>
+					<iframe src="https://docs.google.com/file/d/0B4c4rr1yn9z9LU0wS2ljWnh3QXc/preview" width="100%" height="480"></iframe>
+					<img src="og-bot.JPG" width="100%" />
+					<iframe width="100%" height="320" src="https://www.youtube.com/embed/7CZaF7ByaXw" frameborder="0" allowfullscreen></iframe>
+					<img src="robo-evolution.jpg" width="100%" />
 				</div>
 		<!-- End Page Content -->
 			</div>
 		</div>
 
 		<!-- Footer -->
-		<footer class="w3-container w3-xlarge" id="dark-footer">
-			<div class="w3-left" id="socialLinks">
-				<center><h6>Social</h6></center><hr/>
-				<a href="//fb.com/teamrobobibb/" title="we're @teamRoboBibb" target="_blank"><i class="fa social-icon fa-facebook-official w3-hover-text-indigo"></i></a>
-				<a href="https://twitter.com/FRC4941" title="140 characters or less" target="_blank"><i class="fa social-icon fa-twitter w3-hover-text-light-blue"></i></a>
-				<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff" target="_blank"><i class="fa social-icon fa-instagram w3-hover-text-purple"></i></a>
-				<br/>
-				<a href="https://plus.google.com/117965976071723693137" title="programming team uses Google+" target="_blank"><i class="fa social-icon fa-google-plus-official w3-hover-text-red"></i></a>
-				<a href="//github.com/RoboBibb/" title="we have some pretty sick projects on GitHub" target="_blank"><i class="fa social-icon fa-github w3-hover-text-white"></i></a>
-				<a href="mailto:frcteam4941@gmail.com" title="send us an email"><i class="fa social-icon fa-envelope w3-hover-text-red"></i></a>
-			</div>
-			<hr/><hr/><hr/><hr/><hr/><hr/>
-		</footer>
+		<footer id="dark-footer"></footer>
+		<script>genFooter();</script>
 
 	</body>
 </html>
