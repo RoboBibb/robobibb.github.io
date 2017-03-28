@@ -27,70 +27,23 @@
 				text-align: left;
 			}
 		</style>
-		<script>
-			// Used to toggle the menu on small screens when clicking on the menu button
-			function toggleMenu(){
-				var menu = document.getElementsByClassName("navBtn");
-				for (var i = 0; i < menu.length; i++) {
-					if (menu[i].className.indexOf("w3-hide-small") == -1) {
-						menu[i].className += " w3-hide-small";
-						document.getElementById("hamburger-menu").style.backgroundColor = "#000";
-  					} else {
-						menu[i].className = menu[i].className.replace(" w3-hide-small", "");
-						document.getElementById("hamburger-menu").style.backgroundColor = "red";
-					}
-				}
-			}
-		</script>
+		<script src="https://robobibb.github.io/scripts/main.js"></script>
 	</head>
 	<body>
 
 		<!-- Navbar -->
-		<div class="w3-top">
-			<div class="w3-bar w3-black w3-card-2">
-				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right"
-				   onclick="toggleMenu()" id="hamburger-menu"><i class="fa fa-bars"></i></a>
-				<a href="https://robobibb.github.io/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-				<div id="navMenu">
-					<a href="https://robobibb.github.io/about/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-					<!-- dropdown menu for subteams-->
-					<div class="navBtn dd-navBtn w3-hide-small w3-dropdown-hover">
-						<a href="javascript:void(0)" onclick="" class="w3-padding-large w3-button"
-						   title="More">SUB-TEAMS <i class="fa fa-caret-down"></i></a>
-						<div class="w3-dropdown-content w3-whgrey3-card-4">
-							<a href="https://robobibb.github.com/teams/mechanical/">Mechanical</a>
-							<a href="https://robobibb.github.com/teams/electrical/">Electrical</a>
-							<a href="https://robobibb.github.com/teams/programming/">Programming</a>
-							<a href="https://robobibb.github.com/teams/marketing/">Marketing</a>
-							<!--<a href="#">Scouting</a>
-							<a href="#">Safety</a>-->
-						</div>
-					</div>
-					<a href="https://robobibb.github.io/members/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">MEMBERS</a>
-					<a href="https://robobibb.github.io/sponsors/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
-					<a href="https://robobibb.github.io/outreach/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
-					<a href="https://robobibb.github.io/skills/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small" 
-					   title="we are more than robots!">SKILL BUILDING</a>
-					<a href="https://robobibb.github.io/robots/"
-					   class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small">ROBOTS</a>
-				</div>
-			</div>
-		</div>
+		<div id="navbarhere"></div>
+		<script>genNavBar("navbarhere");</script>
 
 
 		<!-- Page content -->
 		<div class="w3-content" id="pageBackground" style="max-width:2000px">
 			<div class="w3-container w3-content w3-center w3-padding-64" id="sheet" style="max-width:800px;border:1px solid grey" id="band">
-	
+
 
 				<!-- Title -->
 				<h2 class="w3-wide">Community outreach</h2><hr/>
-
+				<p>Community outreach allows us to keep the community interested in robotics and try and spread the word. What we've noticed is that most people don't know what robotics actually is and once they figure out what we actually do, they generally really enjoy it. In addition it's great getting to give back to our community. <b>We care about Macon-Bibb!</b></p>
 				<div style="text-align:left">
 					<h3>Team owns and moderates the FRC community on Google+</h3>
 					<div class="w3-center">
@@ -100,6 +53,43 @@
 							<div class="g-community" data-width="350" data-href="https://plus.google.com/communities/108767604621758116578" data-layout="landscape" data-showowners="true"></div>
 						</div>
 					</div><br/><hr/>
+					
+					<h3>Dixie Crows STEM Symposium</h3>
+					<ul><li>Introduced young children to STEM and FRC</li></ul>
+
+					<div class="bordered-group w3-center">
+						<h4 class="w3-wide">2017</h4>
+						<!-- source: https://www.facebook.com/pg/teamrobobibb/photos/?tab=album&album_id=1148601658518483 ->
+						<div class="w3-hide-small">
+							<iframe src="https://albumizr.com/a/krGg" scrolling="no" frameborder="0" allowfullscreen width="90%" height="500"></iframe>
+						</div><div class="w3-hide-large w3-hide-medium">
+							<iframe src="https://albumizr.com/a/krGg" scrolling="no" frameborder="0" allowfullscreen width="100%" height="300"></iframe>
+						</div>-->
+						<div id="cp_widget_ccc924aa-09af-4a1e-9efa-783261d12edb">image gallery loading</div><script type="text/javascript">
+						var cpo = []; cpo["_object"] ="cp_widget_ccc924aa-09af-4a1e-9efa-783261d12edb"; cpo["_fid"] = "AgDAO7dWh_39";
+						var _cpmp = _cpmp || []; _cpmp.push(cpo);
+						(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+						cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+						var c = document.getElementsByTagName("script")[0];
+						c.parentNode.insertBefore(cp, c); })(); </script>
+					</div><div class="bordered-group w3-center">
+						<h4 class="w3-wide">2016</h4>
+						<!-- source: https://www.facebook.com/pg/teamrobobibb/photos/?tab=album&album_id=1148601658518483 ->
+						<div class="w3-hide-small">
+							<iframe src="https://albumizr.com/a/krGg" scrolling="no" frameborder="0" allowfullscreen width="90%" height="500"></iframe>
+						</div><div class="w3-hide-large w3-hide-medium">
+							<iframe src="https://albumizr.com/a/krGg" scrolling="no" frameborder="0" allowfullscreen width="100%" height="300"></iframe>
+						</div>-->
+						<div id="cp_widget_dd967175-d515-447c-818b-e8ef6ed8e257">image gallery loading...</div>
+						<script type="text/javascript">var cpo=[];
+						cpo["_object"]="cp_widget_dd967175-d515-447c-818b-e8ef6ed8e257";
+						cpo["_fid"]="AwEAs79_jufX";var _cpmp = _cpmp || []; _cpmp.push(cpo);
+						(function(){var cp=document.createElement("script");cp.type="text/javascript";
+						cp.async=true;cp.src="//www.cincopa.com/media-platform/runtime/libasync.js";
+						var c=document.getElementsByTagName("script")[0];
+						c.parentNode.insertBefore(cp,c);})();</script>
+					</div>
+					<br/><hr/>
 
 					<h3>Barnes & Noble Maker Faire</h3>
 					<!--<div class="w3-center">
@@ -119,38 +109,6 @@
 					c.parentNode.insertBefore(cp,c);})();</script>
 					<br/><hr/>
 
-					<h3>Dixie Crows STEM Symposium</h3>
-					<ul><li>Introduced young children to STEM and FRC</li></ul>
-
-					<div class="bordered-group w3-center">
-						<h4 class="w3-wide">2016</h4>
-						<!-- source: https://www.facebook.com/pg/teamrobobibb/photos/?tab=album&album_id=1148601658518483 ->
-						<div class="w3-hide-small">
-							<iframe src="https://albumizr.com/a/krGg" scrolling="no" frameborder="0" allowfullscreen width="90%" height="500"></iframe>
-						</div><div class="w3-hide-large w3-hide-medium">
-							<iframe src="https://albumizr.com/a/krGg" scrolling="no" frameborder="0" allowfullscreen width="100%" height="300"></iframe>
-						</div>-->
-						<div id="cp_widget_dd967175-d515-447c-818b-e8ef6ed8e257">image galery loading...</div>
-						<script type="text/javascript">var cpo=[];
-						cpo["_object"]="cp_widget_dd967175-d515-447c-818b-e8ef6ed8e257";
-						cpo["_fid"]="AwEAs79_jufX";var _cpmp = _cpmp || []; _cpmp.push(cpo);
-						(function(){var cp=document.createElement("script");cp.type="text/javascript";
-						cp.async=true;cp.src="//www.cincopa.com/media-platform/runtime/libasync.js";
-						var c=document.getElementsByTagName("script")[0];
-						c.parentNode.insertBefore(cp,c);})();</script>
-					</div>
-					<br/><hr/>
-
-					<h3>National Guard Family Day</h3>
-					<div class="w3-center">
-						<div class="w3-hide-small">
-							<img src="https://robobibb.github.io/imgs/natl_guard.jpg" width="50%"
-							/><img src="https://robobibb.github.io/imgs/bouncy_house.jpg" width="50%" />
-						</div><div class="w3-hide-large w3-hide-medium">
-							<img src="https://robobibb.github.io/imgs/natl_guard.jpg" width="100%" />
-							<img src="https://robobibb.github.io/imgs/bouncy_house.jpg" width="100%" />
-						</div>
-					</div><br/><hr/>
 
 					<h3>Mentoring two local all-girls FLL teams</h3>
 					<ul>
@@ -163,12 +121,29 @@
 					</div>
 					<hr/>
 
+					<h3>National Guard Family Day</h3>
+					<div class="w3-center">
+						<div class="w3-hide-small">
+							<img src="https://robobibb.github.io/imgs/natl_guard.jpg" width="50%"
+							/><img src="https://robobibb.github.io/imgs/bouncy_house.jpg" width="50%" />
+						</div><div class="w3-hide-large w3-hide-medium">
+							<img src="https://robobibb.github.io/imgs/natl_guard.jpg" width="100%" />
+							<img src="https://robobibb.github.io/imgs/bouncy_house.jpg" width="100%" />
+						</div>
+					</div><br/><hr/>
+
 					<h4>Programming team helps teach outsiders to code by adding them to our communications systems. This way they can learn how to code with us.</h4>
 					<ul>
 						<li>Umar Farouq Mohammad (Lagos, Nigeria)</li>
 						<li>Naseer “Izzy” Ishaq (Lagos, Nigeria)</li>
 						<li>Anshori Achmad (Java)</li>
-					</ul>
+						<li>3 others who choose not to be named (Russia, China, Iran)</li>
+					</ul><hr/>
+
+					<h4>Bell-ringing for Salvation Army</h4>
+					<div class="w3-center">
+						<img src="salvation-army.jpg" style="margin:5px" width="100%" />
+					</div>
 				</div>
 
 
@@ -177,19 +152,8 @@
 		</div>
 
 		<!-- Footer -->
-		<footer class="w3-container w3-xlarge" id="dark-footer">
-			<div class="w3-left" id="socialLinks">
-				<center><h6>Social</h6></center><hr/>
-				<a href="//fb.com/teamrobobibb/" title="we're @teamRoboBibb" target="_blank"><i class="fa social-icon fa-facebook-official w3-hover-text-indigo"></i></a>
-				<a href="https://twitter.com/FRC4941" title="140 characters or less" target="_blank"><i class="fa social-icon fa-twitter w3-hover-text-light-blue"></i></a>
-				<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff" target="_blank"><i class="fa social-icon fa-instagram w3-hover-text-purple"></i></a>
-				<br/>
-				<a href="https://plus.google.com/117965976071723693137" title="programming team uses Google+" target="_blank"><i class="fa social-icon fa-google-plus-official w3-hover-text-red"></i></a>
-				<a href="//github.com/RoboBibb/" title="we have some pretty sick projects on GitHub" target="_blank"><i class="fa social-icon fa-github w3-hover-text-white"></i></a>
-				<a href="mailto:frcteam4941@gmail.com" title="send us an email"><i class="fa social-icon fa-envelope w3-hover-text-red"></i></a>
-			</div>
-			<hr/><hr/><hr/><hr/><hr/><hr/>
-		</footer>
+		<footer id="dark-footer"></footer>
+		<script>genFooter();</script>
 
 	</body>
 </html>
