@@ -2,7 +2,27 @@
 * - generates navbar
 * - generates footer
 * - menu toggle
+* - google analytics
 */
+
+
+
+// Used to toggle the hamburger-menu on small screens when clicking on the menu button
+function toggleMenu(){
+	var menu = document.getElementsByClassName("navBtn");
+	for (var i = 0; i < menu.length; i++) {
+		// if open - close it
+		if (menu[i].className.indexOf("w3-hide-small") == -1) {
+			menu[i].className += " w3-hide-small";
+			document.getElementById("hamburger-menu").style.backgroundColor = "#000";
+		// if closed - open it
+		} else {
+			menu[i].className = menu[i].className.replace(" w3-hide-small", "");
+			document.getElementById("hamburger-menu").style.backgroundColor = "red";
+		}
+	}
+}
+
 
 // creates a navbar inside a given div
 function genNavBar(objId){
@@ -45,21 +65,6 @@ function genNavBar(objId){
 
 }
 
-
-// Used to toggle the hamburger-menu on small screens when clicking on the menu button
-function toggleMenu(){
-	var menu = document.getElementsByClassName("navBtn");
-	for (var i = 0; i < menu.length; i++) {
-		if (menu[i].className.indexOf("w3-hide-small") == -1) {
-			menu[i].className += " w3-hide-small";
-			document.getElementById("hamburger-menu").style.backgroundColor = "#000";
-		} else {
-			menu[i].className = menu[i].className.replace(" w3-hide-small", "");
-			document.getElementById("hamburger-menu").style.backgroundColor = "red";
-		}
-	}
-}
-
 // generates the footer
 function genFooter(){
 	var footer = document.getElementById("dark-footer");
@@ -85,3 +90,12 @@ function genFooter(){
 			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>";
 
 }
+
+
+// google analytics... although here isn't really the best place...
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-96330087-1', 'auto');
+ga('send', 'pageview');
