@@ -24,6 +24,20 @@
 				transition: border-color 0.5s;
 			}
 			div.member-group:hover { border-color: #ed505b; }
+
+			div.video-wrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			}
+			div.video-wrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
 		</style>
 	</head>
 	<body>
@@ -127,7 +141,10 @@
 					</ul>
 					<iframe src="https://docs.google.com/file/d/0B4c4rr1yn9z9LU0wS2ljWnh3QXc/preview" width="100%" height="480"></iframe>
 					<img src="og-bot.JPG" width="100%" />
-					<iframe width="100%" height="320" src="https://www.youtube.com/embed/7CZaF7ByaXw" frameborder="0" allowfullscreen></iframe>
+					<div class="video-wrapper">
+						<iframe width="100%" height="320" frameborder="0" allowfullscreen
+								src="https://www.youtube.com/embed/7CZaF7ByaXw" ></iframe>
+					</div>
 					<img src="robo-evolution.jpg" width="100%" />
 				</div>
 		<!-- End Page Content -->
