@@ -41,12 +41,12 @@ function genNavBar(objId){
 						<a href=\"javascript:void(0)\" onclick=\"\" class=\"w3-padding-large w3-button\"\
 						   title=\"More\">SUB-TEAMS <i class=\"fa fa-caret-down\"></i></a>\
 						<div class=\"w3-dropdown-content w3-whgrey3-card-4\">\
-							<a href=\"https://robobibb.github.com/mechanical/\">Mechanical</a>\
-							<a href=\"https://robobibb.github.com/electrical/\">Electrical</a>\
-							<a href=\"https://robobibb.github.com/programming/\">Programming</a>\
-							<a href=\"https://robobibb.github.com/marketing/\">Marketing</a>\
-							<a href=\"https://robobibb.github.com/drive/\">Drive</a>\
-							<a href=\"https://robobibb.github.com/scouting/\">Scouting</a>\
+							<a href=\"https://robobibb.github.io/mechanical/\">Mechanical</a>\
+							<a href=\"https://robobibb.github.io/electrical/\">Electrical</a>\
+							<a href=\"https://robobibb.github.io/programming/\">Programming</a>\
+							<a href=\"https://robobibb.github.io/marketing/\">Marketing</a>\
+							<a href=\"https://robobibb.github.io/drive/\">Drive</a>\
+							<a href=\"https://robobibb.github.io/scouting/\">Scouting</a>\
 						</div>\
 					</div>\
 					<a href=\"https://robobibb.github.io/members/\"\
