@@ -79,3 +79,9 @@ footer#dark-footer > div#socialLinks:hover > hr {
 footer#dark-footer > div {
 	padding: 11.5px;
 }
+
+
+/* random content stuff */
+div#sheet > p {
+	text-align: left;
+}
