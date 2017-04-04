@@ -1,0 +1,27 @@
+/*for the cover-picture*/
+div.static-back-cover-1 {
+	width: 100%;
+	background-image: url("b1.jpg") !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 0%;
+	background-size: contain;
+}
+div.static-back-cover-1 > h2.mega-title {
+	text-shadow: 2px 2px #000000;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+}
+div.static-back-cover-1 > img#hidden-img {
+	position: relative;
+	width: 100%; /* for IE 6 */
+	opacity: 0;
+}
+
+/*content*/
+div#sheet p {
+	padding-top: 0 !important;
+	text-align: left;
+}
