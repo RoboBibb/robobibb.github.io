@@ -16,3 +16,4 @@ Although anyone on programming can probably fix most problems, these are the peo
 - Robots -> Tate
 - Sub-team sections -> Tate
 - content/text changes -> keely ( @asherkeely )
+- Anything else -> Tate
