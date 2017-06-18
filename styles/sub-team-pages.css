@@ -25,3 +25,16 @@ div#sheet p {
 	padding-top: 0 !important;
 	text-align: left;
 }
+
+/* grouping with red hover */
+div.member-group {
+	border: 1px solid grey;
+	border-left-width: 4px;
+	border-radius: 5px;
+	padding: 2px;
+	padding-left: 5px;
+	margin: 3px;
+	text-align: left;
+	transition: border-color 0.5s;
+}
+div.member-group:hover { border-color: #ed505b; }
