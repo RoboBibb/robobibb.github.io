@@ -101,6 +101,6 @@ div.member-group {
 	text-align: left;
 	transition: border-color 0.5s;
 }
-div.member-group div.member-group:hover 
+div.member-group:hover 
 { border-color: #ed505b; }
 
