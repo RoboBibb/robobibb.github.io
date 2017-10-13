@@ -84,10 +84,10 @@ function genFooter(){
 					<i class=\"fa social-icon fa-github w3-hover-text-white\"></i></a>\
 				<a href=\"mailto:frcteam4941@gmail.com\" title=\"send us an email\">\
 					<i class=\"fa social-icon fa-envelope w3-hover-text-red\"></i></a>\
-			</div>\
+			</div><div>\
 			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>\
 			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>\
-			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>";
+			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div></div>";
 
 }
 
