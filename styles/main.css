@@ -52,13 +52,16 @@ footer#dark-footer > table {
 	padding:0;margin:0;
 	border: 0;width:100%;
 }
-footer#dark-footer > table div#socialLinks { 
+footer#dark-footer div#socialLinks { 
+	width: 135px;
+	font-size: 20px;
 	border: 1px solid grey;
-	padding:2px;margin:3px; 
-	border-radius: 5px;
-	transition: border-color 0.5s;
 	border-left-width: 4px;
-	width: 115px;
+	border-radius: 5px;
+	padding: 2px;
+	padding-left: 5px;
+	margin: 3px;
+	text-align: left;
 }
 .social-icon { padding: 10px;
 	color:grey;
@@ -70,31 +73,21 @@ footer#dark-footer > table div#socialLinks {
 
 div#socialLinks > hr {padding:0;margin:0;}
 
-footer#dark-footer div#foot-string > hr {
-	padding: 0;
-	margin: 0;
-	transition: border-color 0.4s;
-	color: #fff;
-	padding: 11.5px !important;
-}
-
-footer#dark-footer tr td#foot-strings {
+footer#dark-footer td#foot-strings {
 	width: 100%;
 }
-
-
-footer#dark-footer div#foot-string:hover > hr {
-	border-color: red !important;
-	color: red !important;
+footer#dark-footer div.foot-string {
+	padding: 10px;
 }
-footer#dark-footer div#foot-string> hr {
-	border-color: white !important;
-	color: white !important;
-}
-div#foot-string {
-	padding: 11.5px !important;
+footer#dark-footer div.foot-string hr {
+	border-color: white;
+	transition: border-color 0.4s;
+	padding:0;margin:0;
 }
 
+footer#dark-footer div.foot-string:hover > hr {
+	border-color: #ed505b !important;
+}
 
 /* random content stuff */
 div#sheet > p {
@@ -118,4 +111,3 @@ div.member-group {
 }
 div.member-group:hover 
 { border-color: #ed505b; }
-
