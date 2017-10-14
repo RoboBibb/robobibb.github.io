@@ -39,7 +39,6 @@ div.page-card:hover {
 	border-color: red;
 }
 
-
 /*footer*/
 footer#dark-footer {
 	background-color: #202121 !important; 
@@ -48,12 +47,18 @@ footer#dark-footer {
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
-footer#dark-footer > div#socialLinks { 
+
+footer#dark-footer > table {
+	padding:0;margin:0;
+	border: 0;width:100%;
+}
+footer#dark-footer > table div#socialLinks { 
 	border: 1px solid grey;
 	padding:2px;margin:3px; 
 	border-radius: 5px;
 	transition: border-color 0.5s;
 	border-left-width: 4px;
+	width: 115px;
 }
 .social-icon { padding: 10px;
 	color:grey;
@@ -63,21 +68,31 @@ footer#dark-footer > div#socialLinks {
 }
 .social-icon:hover {text-shadow:0px 0px 10px #fff;}
 
-div#socialLinks > hr{padding:0;margin:0;}
+div#socialLinks > hr {padding:0;margin:0;}
 
-footer#dark-footer div > hr {
+footer#dark-footer div#foot-string > hr {
 	padding: 0;
 	margin: 0;
 	transition: border-color 0.4s;
+	color: #fff;
+	padding: 11.5px !important;
 }
-footer#dark-footer > div:hover > hr {
+
+footer#dark-footer tr td#foot-strings {
+	width: 100%;
+}
+
+
+footer#dark-footer div#foot-string:hover > hr {
 	border-color: red !important;
+	color: red !important;
 }
-footer#dark-footer > div#socialLinks:hover > hr {
+footer#dark-footer div#foot-string> hr {
 	border-color: white !important;
+	color: white !important;
 }
-footer#dark-footer > div {
-	padding: 11.5px;
+div#foot-string {
+	padding: 11.5px !important;
 }
 
 
