@@ -69,25 +69,28 @@ function genNavBar(objId){
 function genFooter(){
 	var footer = document.getElementById("dark-footer");
 	footer.className += " w3-container w3-xlarge";
-	footer.innerHTML = "<div class=\"w3-left\" id=\"socialLinks\">\
-				<center><h6>Social</h6></center><hr/>\
-				<a href=\"https://fb.com/teamrobobibb/\" title=\"we're @teamRoboBibb\"\
-				   target=\"_blank\"><i class=\"fa social-icon fa-facebook-official w3-hover-text-indigo\"></i></a>\
-				<a href=\"https://twitter.com/FRC4941\" title=\"140 characters or less\"\
-				   target=\"_blank\"><i class=\"fa social-icon fa-twitter w3-hover-text-light-blue\"></i></a>\
-				<a href=\"https://t.co/K8QYQHTEgu\" title=\"pictures and stuff\"\
-				   target=\"_blank\"><i class=\"fa social-icon fa-instagram w3-hover-text-purple\"></i></a>\
-				<br/>\
-				<a href=\"https://plus.google.com/117965976071723693137\"\title=\"programming team uses Google+\" target=\"_blank\">\
-					<i class=\"fa social-icon fa-google-plus-official w3-hover-text-red\"></i></a>\
-				<a href=\"https://github.com/RoboBibb/\" title=\"we have some pretty sick projects on GitHub\" target=\"_blank\">\
-					<i class=\"fa social-icon fa-github w3-hover-text-white\"></i></a>\
-				<a href=\"mailto:frcteam4941@gmail.com\" title=\"send us an email\">\
-					<i class=\"fa social-icon fa-envelope w3-hover-text-red\"></i></a>\
-			</div><div>\
-			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>\
-			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>\
-			<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div></div>";
+	footer.innerHTML = "<table><tr>\
+				<td><div id=\"socialLinks\">\
+					<center><h6>Social</h6></center><hr/>\
+					<a href=\"https://fb.com/teamrobobibb/\" title=\"we\'re @teamRoboBibb\"\
+					   target=\"_blank\"><i class=\"fa social-icon fa-facebook-official w3-hover-text-indigo\"></i></a>\
+					<a href=\"https://twitter.com/FRC4941\" title=\"140 characters or less\"\
+					   target=\"_blank\"><i class=\"fa social-icon fa-twitter w3-hover-text-light-blue\"></i></a>\
+					<a href=\"https://t.co/K8QYQHTEgu\" title=\"pictures and stuff\"\
+					   target=\"_blank\"><i class=\"fa social-icon fa-instagram w3-hover-text-purple\"></i></a>\
+					<br/>\
+					<a href=\"https://plus.google.com/117965976071723693137\" title=\"programming team uses Google+\" target=\"_blank\">\
+						<i class=\"fa social-icon fa-google-plus-official w3-hover-text-red\"></i></a>\
+					<a href=\"https://github.com/RoboBibb/\" title=\"we have some pretty sick projects on GitHub\" target=\"_blank\">\
+						<i class=\"fa social-icon fa-github w3-hover-text-white\"></i></a>\
+					<a href=\"mailto:frcteam4941@gmail.com\" title=\"send us an email\">\
+						<i class=\"fa social-icon fa-envelope w3-hover-text-red\"></i></a>\
+				</div></td><td id=\"foot-strings\">\
+					<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>\
+					<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>\
+					<div class=\"foot-string\"><hr/></div><div class=\"foot-string\"><hr/></div>\
+				</td>\
+			</tr></table>";
 
 }
 
