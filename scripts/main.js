@@ -43,8 +43,8 @@ function genNavBar(objId){
 						   title=\"More\">ABOUT <i class=\"fa fa-caret-down\"></i></a>\
 						<div class=\"w3-dropdown-content w3-whgrey3-card-4\">\
 							<a href=\"https://robobibb.github.io/about/\">What we do</a>\
-							<a href=\"https://robobibb.github.io/members/\">who we are</a>\
-							<a href=\"https://robobibb.github.io/sponsors/\">how we get there</a>\
+							<a href=\"https://robobibb.github.io/members/\">Who we are</a>\
+							<a href=\"https://robobibb.github.io/sponsors/\">How we function</a>\
 						</div>\
 					</div>\
 					<!-- dropdown menu for subteams-->\
@@ -60,8 +60,8 @@ function genNavBar(objId){
 							<a href=\"https://robobibb.github.io/scouting/\">Scouting</a>\
 						</div>\
 					</div>\
-					<a href=\"https://robobibb.github.io/outreach/\"\
-					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">OUTREACH</a>\
+					<a href=\"https://robobibb.github.io/impact/\"\
+					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">IMPACT</a>\
 					<a href=\"https://robobibb.github.io/skills/\"\
 					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\"\
 					   title=\"we are more than robots!\">SKILL BUILDING</a>\
