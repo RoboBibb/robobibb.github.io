@@ -33,9 +33,18 @@ function genNavBar(objId){
 				<a class=\"w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right\"\
 				   onclick=\"toggleMenu()\" id=\"hamburger-menu\"><i class=\"fa fa-bars\"></i></a>\
 				<a href=\"https://robobibb.github.io/\" class=\"w3-bar-item w3-button w3-padding-large\">HOME</a>\
+				\
 				<div id=\"navMenu\">\
-					<a href=\"https://robobibb.github.io/about/\"\
-					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">ABOUT</a>\
+					<!-- dropdown menu for about us -->\
+					<div class=\"navBtn dd-navBtn w3-hide-small w3-dropdown-hover\">\
+						<a href=\"javascript:void(0)\" onclick=\"\" class=\"w3-padding-large w3-button\"\
+						   title=\"More\">ABOUT <i class=\"fa fa-caret-down\"></i></a>\
+						<div class=\"w3-dropdown-content w3-whgrey3-card-4\">\
+							<a href=\"https://robobibb.github.io/about/\">What we do</a>\
+							<a href=\"https://robobibb.github.io/members/\">who we are</a>\
+							<a href=\"https://robobibb.github.io/sponsors/\">how we get there</a>\
+						</div>\
+					</div>\
 					<!-- dropdown menu for subteams-->\
 					<div class=\"navBtn dd-navBtn w3-hide-small w3-dropdown-hover\">\
 						<a href=\"javascript:void(0)\" onclick=\"\" class=\"w3-padding-large w3-button\"\
@@ -49,10 +58,6 @@ function genNavBar(objId){
 							<a href=\"https://robobibb.github.io/scouting/\">Scouting</a>\
 						</div>\
 					</div>\
-					<a href=\"https://robobibb.github.io/members/\"\
-					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">MEMBERS</a>\
-					<a href=\"https://robobibb.github.io/sponsors/\"\
-					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">SPONSORS</a>\
 					<a href=\"https://robobibb.github.io/outreach/\"\
 					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">OUTREACH</a>\
 					<a href=\"https://robobibb.github.io/skills/\"\
