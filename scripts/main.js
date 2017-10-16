@@ -35,6 +35,8 @@ function genNavBar(objId){
 				<a href=\"https://robobibb.github.io/\" class=\"w3-bar-item w3-button w3-padding-large\">HOME</a>\
 				\
 				<div id=\"navMenu\">\
+					<a href=\"https://robobibb.github.io/robots/\"\
+					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">ROBOTS</a>\
 					<!-- dropdown menu for about us -->\
 					<div class=\"navBtn dd-navBtn w3-hide-small w3-dropdown-hover\">\
 						<a href=\"javascript:void(0)\" onclick=\"\" class=\"w3-padding-large w3-button\"\
@@ -63,8 +65,6 @@ function genNavBar(objId){
 					<a href=\"https://robobibb.github.io/skills/\"\
 					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\"\
 					   title=\"we are more than robots!\">SKILL BUILDING</a>\
-					<a href=\"https://robobibb.github.io/robots/\"\
-					   class=\"navBtn w3-bar-item w3-button w3-padding-large w3-hide-small\">ROBOTS</a>\
 				</div>\
 			</div>";
 
