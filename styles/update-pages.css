@@ -1,0 +1,47 @@
+div.update-body {
+	text-align: left;
+}
+
+
+div.update-body img {
+	width:100%;
+}
+
+div.img-wrapper {
+	border: 1px solid #23333F;
+	border-radius: 5px;
+	border-left-width: 4px;
+	background-color: #23333F;
+	color: #fff;
+	width:100%;
+	text-align: center;
+	padding:0;margins:0;
+	transition-property: border-color, background-color;
+	transition: all 0.5s;
+}
+
+div.img-wrapper:hover {
+	background-color: #ed505b;
+	border-color: #ed505b;
+}
+
+div.video-wrapper-16_9 {
+	position: relative;
+	padding-bottom: 56.25%; /*16:9*/
+	padding-top: 25px;
+	height: 0;
+}
+div.video-wrapper-4_3 {
+	position: relative;
+	padding-bottom: 75%; /*4:3*/
+	padding-top: 25px;
+	height: 0;
+}
+
+div.video-wrapper-16_9 iframe, div.video-wrapper-4_3 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
