@@ -1,1 +1,175 @@
-undefined
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RoboBibb Updates</title>
+		<meta name="description" content="Keep up to date with team Robobibb with relevant stories and updates on thier projects and activities"/>
+		<meta name="keywords" content="FRC robotics FIRST RoboBibb 4941 #4941 team howard high school bibb county robots macon"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="icon" type="image/jpg" href="https://robobibb.github.io/imgs/roboman.jpg" />
+
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+		<link rel="stylesheet" href="https://robobibb.github.io/styles/main.css" />
+		<script src="https://robobibb.github.io/scripts/main.js"></script>
+
+		<style>
+			div.update-list {
+				padding: 0;
+				display: none;
+				max-width:800px;
+				width:100%;
+			}
+			table#tag-select td.update-tab {
+				color: black;
+				background-color: #f5f6f7;
+				width: 25%;
+				padding:0;margin:0;
+				font-size:18px;
+			}
+
+			@media screen and (min-width: 50em) {
+				/*more spaced out on desktop*/
+				div.update-list {
+					padding-left: 50px;
+					padding-right: 50px;
+				}
+				/*can afford a larger font size on desktop*/
+				td.update-tab {
+					font-size:30px !important;
+				}
+			}
+
+			div#tags {
+				background-color: #f5f6f7;
+				padding:0;
+				max-width:800px;
+				padding-top:64px;
+			}
+
+			div#lists {
+				background-color: #fff;
+				padding:0;
+				padding-top:3px;
+				
+			}
+			table#tag-select {
+				width: 100%;
+				border-collapse: collapse;
+			}
+			table#tag-select tr {padding:0;margin:0;}
+			
+			table#tag-select td#selected {
+				border:1px solid grey;
+				border-bottom:0;
+				background-color: grey;
+			}
+			
+			td.update-tab:hover {
+				background-color: #fff;
+			}
+			img.update-thumb {
+				height:100px;
+			}
+			h4.update-title {
+
+			}
+			p.update-desc {
+				text-decoration: none !important;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="w3-top" id="navbarhere"></div>
+		<script>genNavBar("navbarhere");</script>
+
+		<!-- Page content -->
+		<div class="w3-content" id="pageBackground" style="max-width:2000px">
+			<!-- tag tabs --> 			
+			<div class="w3-container w3-content w3-center" id="tags">
+				<table id="tag-select"><tr>
+					<td class="update-tab" onClick="selectTag(0)">All</td>
+					<td class="update-tab" onClick="selectTag(1)">Impact</td>
+					<td class="update-tab" onClick="selectTag(2)">Projects</td>
+					<td class="update-tab" onClick="selectTag(3)">Build Log</td>
+				</tr></table>
+			</div>
+
+			
+			<div class="w3-container w3-content w3-center" id="lists" style="max-width:800px;padding-top:4px; color:black;">
+				<!-- the list of articles corresponding to each tab -->
+
+				<div class="w3-container w3-content w3-center update-list" id="list_all">
+					<table><tr>
+						<td><a href="https://robobibb.github.io/updates/u/0/">
+							<img class="update-thumb" src="https://robobibb.github.io/imgs/roboman.jpg"/>
+						</a></td><td>
+							<a href="https://robobibb.github.io/updates/u/0/"><h4 class="update-title">Article Title</h4></a>
+							<p class="update-desc">A short description of what the article is about and stuff, try and go less than 120 chars</p>
+						</td>
+					</tr></table>
+					<hr/>
+				</div>
+
+				<div class="w3-container w3-content w3-center update-list" id="list_impact">
+				</div>
+
+				<div class="w3-container w3-content w3-center update-list" id="list_projects">
+					<table><tr>
+						<td><a href="https://robobibb.github.io/updates/u/0/">
+							<img class="update-thumb" src="https://robobibb.github.io/imgs/roboman.jpg"/>
+						</a></td><td>
+							<a href="https://robobibb.github.io/updates/u/0/"><h4 class="update-title">Article Title</h4></a>
+							<p class="update-desc">A short description of what the article is about and stuff, try and go less than 120 chars</p>
+						</td>
+					</tr></table>
+					<hr/>
+				</div>
+
+				<div class="w3-container w3-content w3-center update-list" id="list_logs">
+				</div>
+				
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<footer id="dark-footer"></footer>
+		<script>genFooter();</script>
+
+		<script>
+			const tabs  = document.getElementsByClassName("update-tab");
+			const lists = document.getElementsByClassName("update-list");
+
+
+			function selectTag(tagNum){
+
+				// hide all lists except selected one
+				for (var i = 0; i < lists.length; i++)
+					lists[i].style.display = "none";
+				lists[tagNum].style.display = "inline-block";
+
+				// unhighlight all tabs except selected one
+				for (var i = 0; i < tabs.length; i++) {
+					const sTab = tabs[i].style;
+					sTab.border = 0;
+					sTab.borderBottom = "1px solid grey";
+					sTab.backgroundColor = "#f5f6f7";
+				}
+				const sTab = tabs[tagNum].style;
+				sTab.border = "1px solid grey";
+				sTab.borderBottom = "1px solid #fff";
+				sTab.backgroundColor = "#fff";
+				
+			}
+
+			// start without filters
+			selectTag(0);
+
+		</script>
+
+	</body>
+</html>
