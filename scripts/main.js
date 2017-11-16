@@ -66,6 +66,10 @@ function genNavBar(objId){
 							<a href="https://robobibb.github.io/scouting/">Scouting</a>
 						</div>
 					</div>
+
+					<a class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small"
+					   href="https://robobibb.github.io/updates/">UPDATES</a>
+					   
 				</div>
 			</div>`;
 
