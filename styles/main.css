@@ -10,12 +10,12 @@ body {font-family: "Lato", sans-serif; background-color: #202121;}
 div#navMenu > .navBtn{
 	-webkit-transition:color 0.5s;
 	-webkit-transition:background-color 0.5s;
-	/* For Safari 3.1 to 6.0 */ 
+	/* For Safari 3.1 to 6.0 */
 	transition:color 0.5s;
 	transition:background-color 0.5s;
 }
-div.navBtn {padding:10px;}
-div.dd-navBtn, div#navMenu div.navBtn {padding:0 !important;}
+/* div.navBtn {padding:10px;} */
+div.dd-navBtn, div#navMenu div.navBtn { padding:0 !important; }
 a.hamburger {color:#000;transition:color 0.5s;}
 div.w3-dropdown-content a { border-left: 2px solid #202121 !important; }
 div.w3-dropdown-content a:hover { border-left: 4px solid #202121 !important; }
@@ -41,7 +41,7 @@ div.page-card:hover {
 
 /*footer*/
 footer#dark-footer {
-	background-color: #202121 !important; 
+	background-color: #202121 !important;
 	color: #fff !important;
 	box-shadow: inset 0px 9px 9px -6px #000;
 	padding-top: 10px;
@@ -52,7 +52,7 @@ footer#dark-footer > table {
 	padding:0;margin:0;
 	border: 0;width:100%;
 }
-footer#dark-footer div#socialLinks { 
+footer#dark-footer div#socialLinks {
 	width: 135px;
 	font-size: 20px;
 	border: 1px solid grey;
@@ -66,7 +66,7 @@ footer#dark-footer div#socialLinks {
 .social-icon { padding: 10px;
 	color:grey;
 	-webkit-transition:text-shadow 0.5s;
-	/* For Safari 3.1 to 6.0 */ 
+	/* For Safari 3.1 to 6.0 */
 	transition: text-shadow 0.5s;
 }
 .social-icon:hover {text-shadow:0px 0px 10px #fff;}
@@ -109,5 +109,5 @@ div.member-group {
 	text-align: left;
 	transition: border-color 0.5s;
 }
-div.member-group:hover 
+div.member-group:hover
 { border-color: #ed505b; }
