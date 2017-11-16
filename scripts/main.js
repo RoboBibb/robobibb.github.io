@@ -40,7 +40,7 @@ function genNavBar(objId){
 
 				<div id="navMenu">
 					<!-- dropdown menu for about us -->
-					<div class="dd-navBtn w3-hide-small w3-padding-large w3-dropdown-hover">
+					<div class="navBtn dd-navBtn w3-hide-small w3-padding-large w3-dropdown-hover">
 						<a href="javascript:void(0)" onclick="" class="w3-padding-large w3-button"
 						   title="More">ABOUT <i class="fa fa-caret-down"></i></a>
 						<div class="w3-dropdown-content w3-whgrey3-card-4">
@@ -54,7 +54,7 @@ function genNavBar(objId){
 						</div>
 					</div>
 					<!-- dropdown menu for subteams-->
-					<div class="dd-navBtn w3-hide-small w3-padding-large w3-dropdown-hover">
+					<div class="navBtn dd-navBtn w3-hide-small w3-padding-large w3-dropdown-hover">
 						<a href="javascript:void(0)" onclick="" class="w3-padding-large w3-button"
 						   title="More">SUB-TEAMS <i class="fa fa-caret-down"></i></a>
 						<div class="w3-dropdown-content w3-whgrey3-card-4">
