@@ -39,6 +39,9 @@ function genNavBar(objId){
 				<a href="https://robobibb.github.io/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
 
 				<div id="navMenu">
+					<a class="navBtn w3-bar-item w3-button w3-padding-large"
+					   href="https://robobibb.github.io/">HOME</a>
+
 					<!-- dropdown menu for about us -->
 					<div class="navBtn dd-navBtn w3-hide-small w3-padding-large w3-dropdown-hover">
 						<a href="javascript:void(0)" onclick="" class="w3-padding-large w3-button"
@@ -69,7 +72,7 @@ function genNavBar(objId){
 
 					<a class="navBtn w3-bar-item w3-button w3-padding-large w3-hide-small"
 					   href="https://robobibb.github.io/updates/">UPDATES</a>
-					   
+
 				</div>
 			</div>`;
 
