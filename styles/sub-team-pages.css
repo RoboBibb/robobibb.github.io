@@ -22,6 +22,6 @@ div.static-back-cover-1 > img#hidden-img {
 
 /*content*/
 div#sheet p {
-	padding-top: 0 !important;
+	padding-top: 0;
 	text-align: left;
 }
