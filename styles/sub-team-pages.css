@@ -1,23 +1,20 @@
 /*for the cover-picture*/
 div.static-back-cover-1 {
-	width: 100%; font-size: 400%;
+	width: 100%;
 	background-image: url("b1.jpg") !important;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 50% 0%;
 	background-size: contain;
-	
 }
 div.static-back-cover-1 > h1.mega-title {
 	text-shadow: 2px 2px #000000;
-	position: absolute;
-	top: 50px;
-	left: 0;
-	width: 100%;
+	position: absolute; top: 50px; left: 0;
+	width: 100%; font-size: 400%;
 }
 div.static-back-cover-1 > img#hidden-img {
 	position: relative;
-	width: 100%; /* for IE 6 */
+	width: 100%; /* for IE6 */
 	opacity: 0;
 }
 
