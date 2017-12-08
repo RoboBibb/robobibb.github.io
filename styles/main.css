@@ -113,6 +113,9 @@ div.member-group:hover
 { border-color: #ed505b; }
 
 
+/* image wrapper:
+* Include text and an image to add a stylized caption
+*/
 div.img-wrapper {
 	border: 1px solid grey;
 	border-radius: 5px;
@@ -125,9 +128,6 @@ div.img-wrapper {
 	transition-property: border-color, background-color;
 	transition: all 0.5s;
 }
-/* image wrapper:
-* Include text and an image to add a stylized caption
-*/
 div.img-wrapper:hover {
 	background-color: #ed505b;
 	border-color: #ed505b;
