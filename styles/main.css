@@ -111,3 +111,47 @@ div.member-group {
 }
 div.member-group:hover
 { border-color: #ed505b; }
+
+
+div.img-wrapper {
+	border: 1px solid grey;
+	border-radius: 5px;
+	border-left-width: 4px;
+	background-color: grey;
+	color: #fff;
+	width:100%;
+	text-align: center;
+	padding:0;margins:0;
+	transition-property: border-color, background-color;
+	transition: all 0.5s;
+}
+/* image wrapper:
+* Include text and an image to add a stylized caption
+*/
+div.img-wrapper:hover {
+	background-color: #ed505b;
+	border-color: #ed505b;
+}
+
+/* video-wrapper:
+* wraps a yt video so it sizes appropriately on the site
+* using a dynamic size instead of a fixed width
+*/
+div.video-wrapper-16_9 {
+	position: relative;
+	padding-bottom: 56.25%; /*16:9*/
+	padding-top: 25px;
+	height: 0;
+}
+div.video-wrapper-4_3 {
+	position: relative;
+	padding-bottom: 75%; /*4:3*/
+	padding-top: 25px;
+	height: 0;
+}
+
+div.video-wrapper-16_9 iframe, div.video-wrapper-4_3 iframe {
+	position: absolute;
+	top: 0;	left: 0;
+	width: 100%; height: 100%;
+}
