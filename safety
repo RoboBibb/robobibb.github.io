@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RoboBibb Safety-team</title>
+		<meta name="description" content="RoboBibb's safety team is comprised of members who truly embody the spirit of "Safety First.""/>
+		<meta name="keywords" content="FRC robotics FIRST RoboBibb 4941 #4941 team howard high school bibb county robots macon safety"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="icon" type="image/jpg" href="https://robobibb.github.io/imgs/roboman.jpg" />
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://robobibb.github.io/styles/main.css" />
+		<link rel="stylesheet" href="https://robobibb.github.io/styles/sub-team-pages.css" />
+		<style>	div.static-back-cover-1 { background-image: url("b1.jpg") !important; }	</style>
+		<script src="https://robobibb.github.io/scripts/main.js"></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<!-- Page content -->
+		<div class="w3-top" id="navbarhere"></div>
+		<script>genNavBar("navbarhere");</script>
+
+
+		<div class=" w3-center w3-content" id="pageBackground" style="max-width:2000px">
+			<!-- the title box -->
+			<center>
+				<div class="w3-black w3-center static-back-cover-1" style="max-width:800px">
+					<img src="b1.jpg" width="100%" id="hidden-img" />
+
+					<!-- Title -->
+					<h1 class="mega-title"> Safety Team </h2>
+				</div>
+			</center>
+
+			<!-- The actual content -->
+			<div class="w3-container w3-content w3-center" id="sheet" style="max-width:800px;border:1px solid grey" >
+				<h3>About</h3>
+				<p>Throughout the season, safety team is responsible for keeping everyone safe. The members of this team ensure that no one gets injured and that nothing is left where people could get hurt. This includes making sure everyone is wearing safety gear and doing a quick check after each meeting. This team’s primary focus is prioritizing safety.</p>
+
+				<h3>During Build-Season</h3>
+        <p>Safety team members inspect other team members to make sure everyone is following the safety procedures. They must also make sure everyone clamps down and that no one is injured. As the robot is being built, these members will go around to make sure there is nothing left around that could bring harm to anyone.</p>
+				<h3>During Competition</h3>
+				<p>They make sure that everyone in the pit is following the safety rules and that the pit is safe and clean. These team members will administer help to small injuries if necessary and have a safety kit on them at all times in case of emergency. They are also responsible for talking to the judges and answering safety questions.</p>
+				<h3>Members</h3>
+				<div class="member-group" id="jay captain">
+					<h4 style="display:inline-block">David Hudgins</h4> <h6 style="color:grey;display:inline-block"> Captain; Coach</h6><hr/>
+
+					<h5>Job</h5>
+					<p>The safety captain is responsible for making sure that everyone is practicing safe procedures. Since the team works with power tools, the captain must constantly be vigilant. The captain is also responsible for knowing safety procedures so that they can talk to the judges and safety team at competitions. </p>
+					
+					<h5>About Jay</h5>
+					<p>Jay is a senior at Howard High school. He takes multiple AP classes and is one of the most responsible team members. He is the eldest of his family and treats everyone like a younger sibling, always making sure everyone is safe. Jay intends to major in chemical engineering when he goes to college. </p>
+
+	
+		<!-- End Page Content -->
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="dark-footer"></footer>
+		<script>genFooter();</script>
+
+
+	</body>
+</html>
