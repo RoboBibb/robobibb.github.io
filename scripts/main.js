@@ -66,6 +66,7 @@ function genNavBar(objId){
 							<a href="https://robobibb.github.io/marketing/">Marketing</a>
 							<a href="https://robobibb.github.io/drive/">Drive</a>
 							<a href="https://robobibb.github.io/scouting/">Scouting</a>
+							<a href="https://robobibb.github.io/safety/">Safety</a>
 						</div>
 					</div>
 
