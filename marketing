@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RoboBibb Marketing-team</title>
+		<meta name="description" content="RoboBibb's marketing team is responsible for the business aspects of the robotics world."/>
+		<meta name="keywords" content="FRC robotics FIRST RoboBibb 4941 #4941 team howard high school bibb county robots macon marketing communication business"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="icon" type="image/jpg" href="https://robobibb.github.io/imgs/roboman.jpg" />
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://robobibb.github.io/styles/main.css" />
+		<link rel="stylesheet" href="https://robobibb.github.io/styles/sub-team-pages.css" />
+		<style>	div.static-back-cover-1 { background-image: url("b1.jpg") !important; }	</style>
+		<script src="https://robobibb.github.io/scripts/main.js"></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<!-- Page content -->
+		<div class="w3-top" id="navbarhere"></div>
+		<script>genNavBar("navbarhere");</script>
+
+
+		<div class=" w3-center w3-content" id="pageBackground" style="max-width:2000px">
+			<!-- the title box -->
+			<center>
+				<div class="w3-black w3-center static-back-cover-1" style="max-width:800px">
+					<img src="b1.jpg" width="100%" id="hidden-img" />
+
+					<!-- Title -->
+					<h1 class="mega-title"> Drive Team </h2>
+				</div>
+			</center>
+
+			<!-- The actual content -->
+			<div class="w3-container w3-content w3-center" id="sheet" style="max-width:800px;border:1px solid grey" >
+				<h3>About</h3>
+				<p>Marketing team deals with the business side of the robotics world. They are responsible for writing grants, recruiting members, gaining sponsors, and working on our website and media platforms. While most of their work is behind the scenes, they are an integral part of our team.</p>
+        
+				<h3>Before and During Build-Season</h3>
+				<p>The marketing team is busiest before and during the build season. They recruit new members at the start of the year and begin looking for community events to spread stem awareness at. They also start creating promotional materials and designs. Once the build season starts, the team keeps the website updated and maintained. </p>
+
+				<h3>During Competition</h3>
+				<p>During competitions, the media subteam collects pictures and videos to be put on our website and YouTube channel. The members who are not on the media subteam assimilate to other teams at this time.</p>
+
+				<h3>Members</h3>
+				<div class="member-group" id="keely captain">
+					<h4 style="display:inline-block">Keely Testa</h4> <h6 style="color:grey;display:inline-block"> Captain</h6><hr/>
+
+					<h5>Job</h5>
+					<p>The Marketing Captain oversees all marketing and business related projects. They are in charge of making any final edits to written or promotional materials. Also, they serve as a representative of the team in the community as well as with sponsors.</p>
+					
+					<h5>About Keely</h5>
+					<p>Keely is a very sociable person who enjoys meeting new people. She excels at written and verbal communication and is a member of the Journalism team that writes her school's newspaper. Keely also has an interest in Linguistics and is currently studying Japanese. Even though engineering is not her focus, Keely has a love for STEM and plans to one day enter the field.</p>
+
+				</div>
+				<div class="member-group" id="thomas design lead">
+					<h4 style="display:inline-block">Makayla Tetterton</h4> <h6 style="color:grey;display:inline-block"> Design Lead</h6><hr/>
+
+					<h5>Job</h5>
+					<p>The design lead is in charge of creating any designs or logos the team may need. This includes creating a mascot and collaborating on our t shirt designs. The Design Lead must have superb art skills and a knowledge of of style in order to complete these tasks.</p>
+          
+					<h5>About Makayla</h5>
+					<p>Makayla is a sophomore at Howard High. She is the art club vice president and is never seen without a sketchbook. She designed our mascot Steve and got to see her art come to life as a six foot tall cutout. Her work has also been featured on our t-shirts and buttons.</p>
+				</div>
+				<div class="member-group" id="tanner media cameraman">
+					<h4 style="display:inline-block">Tanner Francis</h4> <h6 style="color:grey;display:inline-block"> Media Lead</h6><hr/>
+
+					<h5>Job</h5>
+					<p>The media specialist records competitions and everyday moments. They compile the collected media into videos, photos, and promotional material to be used throughout the season. Their pictures and videos are featured on our website and various other media platforms. </p>
+
+					<h5>About Tanner</h5>
+					<p>Tanner is a senior at Howard. In his spare time, he likes to create movies with his friends on anything from World War One to the fiscal year. He also does photography on the side and has captured many excellent photos. Tanner plans to study film and videography in college next year.</p>
+				</div><br/><br/>
+
+		<!-- End Page Content -->
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="dark-footer"></footer>
+		<script>genFooter();</script>
+
+
+	</body>
+</html>
