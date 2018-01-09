@@ -94,8 +94,8 @@ function genFooter(){
 					<a href="https://t.co/K8QYQHTEgu" title="pictures and stuff"
 					   target="_blank"><i class="fa social-icon fa-instagram w3-hover-text-purple"></i></a>
 					<br/>
-					<a href="https://plus.google.com/117965976071723693137" title="programming team uses Google+" target="_blank">
-						<i class="fa social-icon fa-google-plus-official w3-hover-text-red"></i></a>
+					<a href="https://www.flickr.com/people/137802901@N03/" title="Media Team uses Flickr" target="_blank">
+						<i class="fa social-icon fa-flickr w3-hover-text-red"></i></a>
 					<a href="https://github.com/RoboBibb/" title="we have some pretty sick projects on GitHub" target="_blank">
 						<i class="fa social-icon fa-github w3-hover-text-white"></i></a>
 					<a href="mailto:frcteam4941@gmail.com" title="send us an email">
