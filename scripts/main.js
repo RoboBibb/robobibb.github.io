@@ -36,7 +36,7 @@ function genNavBar(objId){
 			<div class="w3-bar w3-black w3-card-2">
 				<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right"
 				   onclick="toggleMenu()" id="hamburger-menu"><i class="fa fa-bars"></i></a>
-			
+
 				<div id="navMenu">
 					<a class="navBtn w3-bar-item w3-button w3-padding-large"
 					   href="https://robobibb.github.io/">HOME</a>
@@ -47,7 +47,7 @@ function genNavBar(objId){
 						   title="More">ABOUT <i class="fa fa-caret-down"></i></a>
 						<div class="w3-dropdown-content w3-whgrey3-card-4">
 							<a href="https://robobibb.github.io/about/">About Us</a>
-							<a href="https://robobibb.github.io/members/">Members</a>
+							<a href="https://robobibb.github.io/leadership/">Leadership</a>
 							<a href="https://robobibb.github.io/sponsors/">Sponsors</a>
 							<a href="https://robobibb.github.io/impact/">Our Impact</a>
 							<a href="https://robobibb.github.io/skills/"
