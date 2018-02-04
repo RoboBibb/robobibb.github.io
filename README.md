@@ -1,7 +1,7 @@
 # RoboBibb.GitHub.io
 see our team website here: https://robobibb.github.io/
 
-This website is built by the RoboBibb programming team using the [W3.CSS](https://www.w3schools.com/w3css/) web framework, a lightweight web framework.
+This website is built by the RoboBibb programming and marketing teams using the [W3.CSS](https://www.w3schools.com/w3css/) CSS framework, a lightweight web framework.
 
 # Who to contact
 Although hopefully anyone on website team knows how to fix most problems, these are the people who best understand each page. If you find an problem feel free to open an issue on github or contact one of these people.
